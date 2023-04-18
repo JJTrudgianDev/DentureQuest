@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Zach scene.unity
+    path: Assets/Scenes/ZachScene.unity
     guid: 6e851b86a82a1d54e9c44b3c0170a3ce
   - enabled: 1
     path: Assets/Scenes/LevelComplete.unity
