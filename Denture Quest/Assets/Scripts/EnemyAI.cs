@@ -11,7 +11,8 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent agent;
 
     private GameObject player;
-    
+
+    private bool playerInRange = false;
     // Activities to perform at each patrol point
     public enum ActivityType
     {
@@ -38,9 +39,15 @@ public class EnemyAI : MonoBehaviour
     public GameObject detectionBar;
     public Image alertnessImage;
 
+    //Speed Of AI
+    public float movementSpeed = 3.5f;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+
+        // Set the speed of the agent
+        agent.speed = movementSpeed;
 
         SelectRandomPoint();
 
@@ -65,7 +72,17 @@ public class EnemyAI : MonoBehaviour
 
         if (detectingPlayer)
         {
-            detectionTimer += Time.deltaTime;
+            if (playerInRange)
+            {
+                detectionTimer += Time.deltaTime;
+            }
+            else
+            {
+                detectionTimer -= Time.deltaTime;
+            }
+
+            detectionTimer = Mathf.Clamp(detectionTimer, 0f, detectionTime);
+
             alertnessImage.fillAmount = detectionTimer / detectionTime;
 
             if (detectionTimer >= detectionTime)
@@ -79,19 +96,61 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            playerInRange = true;
             detectionTimer = 0f;
             detectingPlayer = true;
             detectionBar.SetActive(true);
         }
     }
 
+    IEnumerator DecreaseDetection()
+    {
+        // Gradually decrease the detection fill amount over time
+        while (detectionTimer > 0)
+        {
+            detectionTimer -= Time.deltaTime;
+            alertnessImage.fillAmount = detectionTimer / detectionTime;
+            yield return null;
+        }
+
+        detectionBar.SetActive(false);
+    }
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             detectingPlayer = false;
-            detectionBar.SetActive(false);
+            playerInRange = false;
+            StartCoroutine(DecreaseDetection());
+            // If the detection timer is still running, keep the detection bar visible
+            if (detectionTimer < detectionTime)
+            {
+                detectionBar.SetActive(true);
+            }
         }
+    }
+
+    IEnumerator WaitBeforeResetDetection()
+    {
+        yield return new WaitForSeconds(2f);
+        detectionTimer = 0f;
+        alertnessImage.fillAmount = 0f;
+    }
+    IEnumerator ResetDetectionTimer()
+    {
+        // Gradually reduce detection timer to 0 over 2 seconds
+        float timeToReset = 2f;
+        float elapsedTime = 0f;
+        float startingValue = detectionTimer;
+
+        while (elapsedTime < timeToReset)
+        {
+            detectionTimer = Mathf.Lerp(startingValue, 0f, elapsedTime / timeToReset);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        detectionTimer = 0f;
     }
 
     void SelectRandomPoint()
