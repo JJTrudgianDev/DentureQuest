@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Zach scene.unity
+    guid: 6e851b86a82a1d54e9c44b3c0170a3ce
+  - enabled: 1
+    path: Assets/Scenes/LevelComplete.unity
+    guid: 694a445926e8851468b2265000c8fa65
   m_configObjects: {}
