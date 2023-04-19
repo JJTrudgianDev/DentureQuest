@@ -5,10 +5,18 @@ using UnityEngine;
 public class ThirdPersonMovement : MonoBehaviour
 {
     public float speed = 6f;
+    public float crouchSpeed = 2f;
     public float jumpForce = 10f;
     public float gravity = -9.81f;
     public Transform groundCheck;
     public LayerMask groundMask;
+    public LayerMask obstacleMask;
+
+    public float smallScale = 0.5f;
+    private bool isSmall = false;
+    private float originalHeight;
+    private Vector3 originalScale;
+
 
     private CharacterController controller;
     private Vector3 velocity;
@@ -25,6 +33,8 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         thirdPersonCamera = Camera.main.GetComponent<ThirdPersonCamera>();
+        originalHeight = controller.height;
+        originalScale = transform.localScale;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -32,6 +42,25 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Update()
     {
+        // Crouch when the button is held down
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (!isSmall)
+            {
+                transform.localScale = originalScale * smallScale;
+                isSmall = true;
+            }
+        }
+        // Uncrouch when the button is released and there is enough space above the player's head
+        else if (isSmall)
+        {
+            if (CanUncrouch())
+            {
+                transform.localScale = originalScale;
+                isSmall = false;
+            }
+        }
+
         // Check if the player is grounded
         isGrounded = Physics.CheckSphere(groundCheck.position, 0.1f, groundMask);
 
@@ -43,20 +72,26 @@ public class ThirdPersonMovement : MonoBehaviour
         Vector3 moveDirection = thirdPersonCamera.transform.right * horizontal + thirdPersonCamera.transform.forward * vertical;
         moveDirection.y = 0f;
         moveDirection.Normalize();
-        controller.Move(moveDirection * speed * Time.deltaTime);
 
-        // Jump if the player is grounded and the jump button is pressed
-        if (isGrounded && Input.GetButtonDown("Jump"))
-        {
-            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-            
-        }
+        // Adjust speed based on whether the character is crouching or not
+        float currentSpeed = isSmall ? crouchSpeed : speed;
+
+        controller.Move(moveDirection * currentSpeed * Time.deltaTime);
 
         // Apply gravity to the velocity
         velocity.y += gravity * Time.deltaTime;
 
         // Apply the velocity to the character controller
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private bool CanUncrouch()
+    {
+        RaycastHit hit;
+        float distance = (originalHeight - originalHeight * smallScale) + 0.1f; // The extra 0.1f is to avoid false collisions due to floating-point errors
+        bool canUncrouch = !Physics.Raycast(transform.position, Vector3.up, out hit, distance, obstacleMask);
+
+        return canUncrouch;
     }
 
     // Teleport Denture Object
@@ -75,3 +110,4 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 }
+

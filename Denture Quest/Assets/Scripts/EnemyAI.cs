@@ -1,175 +1,112 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
+
     public Transform[] patrolPoints;
     private int currentPoint = 0;
     private NavMeshAgent agent;
-
     private GameObject player;
-
     private bool playerInRange = false;
-    // Activities to perform at each patrol point
-    public enum ActivityType
-    {
-        None,
-        BrushTeeth,
-        LookOutWindow,
-        DoWork,
-        UsePhone,
-        Dishes
-    }
 
-    // Assign an activity for each patrol point
+    public enum ActivityType { None, BrushTeeth, LookOutWindow, DoWork, UsePhone, Dishes }
     public ActivityType[] activities;
-
-    // Time to stay at each patrol point
     public float activityTime = 10f;
     private float timer = 0f;
     private bool performingActivity = false;
 
-    // Detection mechanics
     public float detectionTime = 5f;
     private float detectionTimer = 0f;
     private bool detectingPlayer = false;
     public GameObject detectionBar;
     public Image alertnessImage;
-
-    //Speed Of AI
     public float movementSpeed = 3.5f;
+    public float followSpeed = 1f;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
-        // Set the speed of the agent
         agent.speed = movementSpeed;
-
         SelectRandomPoint();
-
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        if (!performingActivity && agent.remainingDistance <= agent.stoppingDistance)
+        UpdateActivity();
+        UpdateDetection();
+        if (!playerInRange) // Only face the destination if the player is not in range
         {
+            FaceDestination();
+        }
+    }
+
+    void UpdateActivity()
+    {
+        if (!performingActivity && agent.remainingDistance <= agent.stoppingDistance && !playerInRange)
             StartActivity();
-        }
+        if (performingActivity && (timer += Time.deltaTime) >= activityTime)
+            EndActivity();
+    }
 
-        if (performingActivity)
-        {
-            timer += Time.deltaTime;
-            if (timer >= activityTime)
-            {
-                EndActivity();
-            }
-        }
-
-        if (detectingPlayer)
-        {
-            if (playerInRange)
-            {
-                detectionTimer += Time.deltaTime;
-            }
-            else
-            {
-                detectionTimer -= Time.deltaTime;
-            }
-
-            detectionTimer = Mathf.Clamp(detectionTimer, 0f, detectionTime);
-
-            alertnessImage.fillAmount = detectionTimer / detectionTime;
-
-            if (detectionTimer >= detectionTime)
-            {
-                DetectPlayer();
-            }
-        }
+    void UpdateDetection()
+    {
+        if (!detectingPlayer) return;
+        detectionTimer = Mathf.Clamp(playerInRange ? detectionTimer + Time.deltaTime : detectionTimer - Time.deltaTime, 0f, detectionTime);
+        alertnessImage.fillAmount = detectionTimer / detectionTime;
+        if (detectionTimer >= detectionTime) DetectPlayer();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = true;
-            detectionTimer = 0f;
-            detectingPlayer = true;
-            detectionBar.SetActive(true);
-        }
+        if (!other.CompareTag("Player")) return;
+        playerInRange = detectingPlayer = true;
+        detectionTimer = 0f;
+        detectionBar.SetActive(true);
+        agent.isStopped = true;
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        FacePlayer();
+        FollowPlayer();
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        detectingPlayer = playerInRange = false;
+        agent.isStopped = false;
+        StartCoroutine(DecreaseDetection());
+        EndActivity(); // Immediately resume patrol without waiting
     }
 
     IEnumerator DecreaseDetection()
     {
-        // Gradually decrease the detection fill amount over time
         while (detectionTimer > 0)
         {
             detectionTimer -= Time.deltaTime;
             alertnessImage.fillAmount = detectionTimer / detectionTime;
             yield return null;
         }
-
         detectionBar.SetActive(false);
-    }
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            detectingPlayer = false;
-            playerInRange = false;
-            StartCoroutine(DecreaseDetection());
-            // If the detection timer is still running, keep the detection bar visible
-            if (detectionTimer < detectionTime)
-            {
-                detectionBar.SetActive(true);
-            }
-        }
-    }
-
-    IEnumerator WaitBeforeResetDetection()
-    {
-        yield return new WaitForSeconds(2f);
-        detectionTimer = 0f;
-        alertnessImage.fillAmount = 0f;
-    }
-    IEnumerator ResetDetectionTimer()
-    {
-        // Gradually reduce detection timer to 0 over 2 seconds
-        float timeToReset = 2f;
-        float elapsedTime = 0f;
-        float startingValue = detectionTimer;
-
-        while (elapsedTime < timeToReset)
-        {
-            detectionTimer = Mathf.Lerp(startingValue, 0f, elapsedTime / timeToReset);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-
-        detectionTimer = 0f;
     }
 
     void SelectRandomPoint()
     {
-        // Select a random patrol point
-        int randomPoint = Random.Range(0, patrolPoints.Length);
-        currentPoint = randomPoint;
+        currentPoint = Random.Range(0, patrolPoints.Length);
         agent.SetDestination(patrolPoints[currentPoint].position);
     }
 
     void StartActivity()
     {
-        // Start performing the activity
         performingActivity = true;
-
-        // Get the activity for the current patrol point
         ActivityType activity = activities[currentPoint];
 
-        // Perform the activity
         switch (activity)
         {
             case ActivityType.None:
@@ -194,63 +131,86 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    void FaceDestination()
+    {
+        Vector3 directionToDestination;
+
+        if (performingActivity) // Face the patrol point's x direction when performing activity
+        {
+            directionToDestination = patrolPoints[currentPoint].position - transform.position;
+        }
+        else if (agent.remainingDistance > agent.stoppingDistance) // Face the destination while moving towards it
+        {
+            directionToDestination = agent.destination - transform.position;
+        }
+        else // No need to face any direction if not performing activity and agent is at the stopping distance
+        {
+            return;
+        }
+
+        directionToDestination.y = 0;
+
+        if (directionToDestination.magnitude > 0.001f) // Check if the direction vector has a magnitude greater than a small threshold
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(directionToDestination);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+        }
+    }
+
+
     void EndActivity()
     {
-        // End the activity
         performingActivity = false;
         timer = 0f;
-
-        // Select a new patrol point
         SelectRandomPoint();
     }
 
     void BrushTeeth()
     {
-        // Insert code for brushing teeth here
         Debug.Log("Brushing teeth at patrol point " + currentPoint);
     }
-
     void LookOutWindow()
     {
-        // Insert code for looking out window here
         Debug.Log("Looking out window at patrol point " + currentPoint);
     }
 
     void DoWork()
     {
-        // Insert code for looking out window here
         Debug.Log("DoWork at patrol point " + currentPoint);
     }
 
     void UsePhone()
     {
-        // Insert code for looking out window here
         Debug.Log("UsePhone at patrol point " + currentPoint);
     }
 
     void Dishes()
     {
-        // Insert code for looking out window here
         Debug.Log("Dishes at patrol point " + currentPoint);
     }
 
-
-
-    IEnumerator WaitBeforeNewActivity()
-    {
-        yield return new WaitForSeconds(10f);
-        EndActivity();
-    }
-
     void DetectPlayer()
-    {    
-        // Trigger detection consequences
+    {
         Debug.Log("Player detected!");
         detectingPlayer = false;
         detectionTimer = 0f;
         detectionBar.SetActive(false);
+        // Insert code for detection consequences
+    }
 
-        // Insert code for triggering alarm or other consequences of being detected
+    void FacePlayer()
+    {
+        Vector3 directionToPlayer = player.transform.position - transform.position;
+        directionToPlayer.y = 0;
+        Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+    }
+
+    void FollowPlayer()
+    {
+        agent.isStopped = false;
+        agent.speed = followSpeed;
+        agent.SetDestination(player.transform.position);
     }
 
 }
