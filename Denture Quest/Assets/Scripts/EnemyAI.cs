@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class EnemyAI : MonoBehaviour
 {
 
@@ -195,7 +195,7 @@ public class EnemyAI : MonoBehaviour
         detectingPlayer = false;
         detectionTimer = 0f;
         detectionBar.SetActive(false);
-        // Insert code for detection consequences
+        SceneManager.LoadScene("LevelFailed");
     }
 
     void FacePlayer()

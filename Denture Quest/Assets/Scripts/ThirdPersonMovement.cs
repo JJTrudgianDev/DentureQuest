@@ -12,11 +12,13 @@ public class ThirdPersonMovement : MonoBehaviour
     public LayerMask groundMask;
     public LayerMask obstacleMask;
 
+
     public float smallScale = 0.5f;
     private bool isSmall = false;
     private float originalHeight;
     private Vector3 originalScale;
 
+    public float scaleTime = 0.25f;
 
     private CharacterController controller;
     private Vector3 velocity;
@@ -43,20 +45,20 @@ public class ThirdPersonMovement : MonoBehaviour
     void Update()
     {
         // Crouch when the button is held down
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             if (!isSmall)
             {
-                transform.localScale = originalScale * smallScale;
+                StartCoroutine(ScalePlayer(originalScale * smallScale, scaleTime));
                 isSmall = true;
             }
         }
         // Uncrouch when the button is released and there is enough space above the player's head
-        else if (isSmall)
+        else if (Input.GetKeyUp(KeyCode.LeftControl) && isSmall)
         {
             if (CanUncrouch())
             {
-                transform.localScale = originalScale;
+                StartCoroutine(ScalePlayer(originalScale, scaleTime));
                 isSmall = false;
             }
         }
@@ -94,6 +96,20 @@ public class ThirdPersonMovement : MonoBehaviour
         return canUncrouch;
     }
 
+    private IEnumerator ScalePlayer(Vector3 targetScale, float duration)
+    {
+        float timeElapsed = 0;
+        Vector3 initialScale = transform.localScale;
+
+        while (timeElapsed < duration)
+        {
+            transform.localScale = Vector3.Lerp(initialScale, targetScale, timeElapsed / duration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        transform.localScale = targetScale;
+    }
+
     // Teleport Denture Object
     private void OnTriggerEnter(Collider other)
     {
@@ -110,4 +126,5 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 }
+
 
