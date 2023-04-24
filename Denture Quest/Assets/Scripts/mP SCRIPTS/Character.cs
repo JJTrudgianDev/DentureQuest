@@ -65,6 +65,9 @@ public class Character : MonoBehaviour
         
         // If there is a pin then move to it
         if (pin == null) return;
+
+        if (!pin.isUnlocked) return;
+
         MoveToPin(pin);
     }
 

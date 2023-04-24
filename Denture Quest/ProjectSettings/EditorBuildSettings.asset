@@ -6,8 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/map.unity
+    guid: fe4d12589fb1e0b458cbbb74e45154b0
+  - enabled: 1
     path: Assets/Scenes/ZachScene.unity
     guid: 6e851b86a82a1d54e9c44b3c0170a3ce
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 1.unity
+    guid: 08f25f375bf39f743930a7a16ab53220
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 2.unity
+    guid: 3e8cfb3a3fed487428183f91abd4b4ec
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 3.unity
+    guid: f3ecc2456f314d34bbc51849ec1de878
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 4.unity
+    guid: 060549c5718cb4440b4d4a4b51891ff8
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 5.unity
+    guid: 3b3cc60cf071e674ab970179fc0e9954
   - enabled: 1
     path: Assets/Scenes/LevelComplete.unity
     guid: 694a445926e8851468b2265000c8fa65

@@ -387,7 +387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
+  SceneToLoad: Level 3
+  isUnlocked: 0
   UpPin: {fileID: 1511212821}
   DownPin: {fileID: 0}
   LeftPin: {fileID: 0}
@@ -506,7 +507,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
+  SceneToLoad: Level 5
+  isUnlocked: 0
   UpPin: {fileID: 0}
   DownPin: {fileID: 1484026007}
   LeftPin: {fileID: 0}
@@ -779,7 +781,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
+  SceneToLoad: Level 4
+  isUnlocked: 0
   UpPin: {fileID: 759571102}
   DownPin: {fileID: 0}
   LeftPin: {fileID: 691460539}
@@ -898,7 +901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: JakeScene
+  SceneToLoad: Level 2
+  isUnlocked: 0
   UpPin: {fileID: 0}
   DownPin: {fileID: 691460539}
   LeftPin: {fileID: 1964446049}
@@ -1055,7 +1059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: ZachScene
+  SceneToLoad: Level 1
+  isUnlocked: 0
   UpPin: {fileID: 0}
   DownPin: {fileID: 0}
   LeftPin: {fileID: 0}
@@ -1158,6 +1163,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Character: {fileID: 188445877}
   StartPin: {fileID: 1964446049}
+  Pins:
+  - {fileID: 1964446049}
+  - {fileID: 1511212821}
+  - {fileID: 691460539}
+  - {fileID: 1484026007}
+  - {fileID: 759571102}
   SelectedLevelText: {fileID: 0}
 --- !u!4 &2115543283
 Transform:
