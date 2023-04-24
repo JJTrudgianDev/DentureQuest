@@ -2019,7 +2019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8415343ebc9d547ba73ab01e514bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelToUnlock: 2
+  nextLevelToUnlock: 5
 --- !u!65 &618054358777442988
 BoxCollider:
   m_ObjectHideFlags: 0
