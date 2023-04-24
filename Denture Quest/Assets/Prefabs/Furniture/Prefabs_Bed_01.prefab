@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 482846873719574439}
   - component: {fileID: 2402562535495990125}
   m_Layer: 0
-  m_Name: Blockout_Bed_02
+  m_Name: Prefabs_Bed_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
