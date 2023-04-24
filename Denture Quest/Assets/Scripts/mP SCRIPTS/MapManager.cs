@@ -7,22 +7,51 @@ public class MapManager : MonoBehaviour
 {
 	public Character Character;
 	public Pin StartPin;
+    public Pin[] Pins;
 	public Text SelectedLevelText;
+
+	int unlockedLevel = 1;
 	
 	/// <summary>
 	/// Use this for initialization
 	/// </summary>
-	private void Start ()
+	private void Start()
 	{
-		// Pass a ref and default the player Starting Pin
-		Character.Initialise(this, StartPin);
-	}
+
+		if (!PlayerPrefs.HasKey("LevelUnlocked"))
+		{
+			PlayerPrefs.SetInt("LevelUnlocked", 1);
+		}
+
+		unlockedLevel = PlayerPrefs.GetInt("LevelUnlocked");
+
+		for (int i = 0; i < unlockedLevel; i++)
+		{
+			Pins[i].isUnlocked = true;
+			if (i == unlockedLevel - 1)
+			{
+                if (i == 0)
+                {
+                    StartPin = Pins[0];
+                }
+				else
+				{
+                    StartPin = Pins[i - 1];
+                }
+            }
+
+		}
+
+        // Pass a ref and default the player Starting Pin
+        Character.Initialise(this, StartPin);
+
+    }
 
 
-	/// <summary>
-	/// This runs once a frame
-	/// </summary>
-	private void Update()
+    /// <summary>
+    /// This runs once a frame
+    /// </summary>
+    private void Update()
 	{
 		// Only check input when character is stopped
 		if (Character.IsMoving) return;
@@ -58,6 +87,12 @@ public class MapManager : MonoBehaviour
 			SceneManager.LoadScene(Character.CurrentPin.SceneToLoad);
         }
 
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            PlayerPrefs.SetInt("LevelUnlocked", 1);
+            SceneManager.LoadScene("map");
+        }
+
 
     }
 
@@ -67,6 +102,6 @@ public class MapManager : MonoBehaviour
 	/// </summary>
 	public void UpdateGui()
 	{
-		SelectedLevelText.text = string.Format("Current Level: {0}", Character.CurrentPin.SceneToLoad);
+		//SelectedLevelText.text = string.Format("Current Level: {0}", Character.CurrentPin.SceneToLoad);
 	}
 }
