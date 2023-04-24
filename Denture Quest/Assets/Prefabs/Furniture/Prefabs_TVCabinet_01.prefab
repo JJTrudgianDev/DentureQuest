@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102107510220228218}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prefabs_TVCabinet_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6286050144306309723}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7424567903202277613}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8890204707721506442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2474838179347386997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 970851989439081292}
   - component: {fileID: 631516727376299502}
   - component: {fileID: 2391849722362758218}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6169830544581618773}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5366743873955750921}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4853011614126940737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 730461813463566324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6665224718195194847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3939943249499085669}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
