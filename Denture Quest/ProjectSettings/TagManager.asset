@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Dentures
   - Exit
+  - KeyOne
+  - KeyTwo
   layers:
   - Default
   - TransparentFX
