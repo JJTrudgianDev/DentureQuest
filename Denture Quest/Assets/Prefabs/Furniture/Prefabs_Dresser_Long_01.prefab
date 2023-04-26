@@ -178,6 +178,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4868236801269526019, guid: 093541a2fae88a042a892df1712372a7, type: 3}
   m_PrefabInstance: {fileID: 7192688818808865501}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1872319218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332552125275548894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.228, z: 0.43092188}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4723138895320559444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,19 +209,6 @@ MonoBehaviour:
   detectionRange: 5
   emptyObject: {fileID: 4055863229233684868}
   cameraName: Cam
---- !u!65 &1872319218
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2332552125275548894}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.228, z: 0.43092188}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7092274168950288807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 125328489769546618, guid: 093541a2fae88a042a892df1712372a7, type: 3}
