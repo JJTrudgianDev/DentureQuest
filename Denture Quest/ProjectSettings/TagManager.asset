@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Dentures
+  - Exit
+  - KeyOne
+  - KeyTwo
   layers:
   - Default
   - TransparentFX
@@ -12,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - ground
+  - Solid
   - 
   - 
   - 
