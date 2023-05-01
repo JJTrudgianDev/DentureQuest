@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectUnlockManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ObjectUnlockManager : MonoBehaviour
         public GameObject lockedObject;
         public string keyTag;
         public bool isUnlocked;
+        public Image unlockImage;
     }
 
     [SerializeField] private List<KeyLockPair> keyLockPairs;
@@ -20,12 +22,13 @@ public class ObjectUnlockManager : MonoBehaviour
         foreach (KeyLockPair pair in keyLockPairs)
         {
             pair.lockedObject.SetActive(true);
+            pair.unlockImage.enabled = false;
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             CheckForKeyAndUnlockObject();
         }
@@ -61,6 +64,9 @@ public class ObjectUnlockManager : MonoBehaviour
 
         // Set the locked object's tag to the key's tag
         keyLockPairs[index].lockedObject.tag = keyLockPairs[index].keyTag;
+
+        // Enable the unlock image in the UI
+        keyLockPairs[index].unlockImage.enabled = true;
     }
 
     private void DestroyLock(int index)
