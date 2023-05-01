@@ -26,6 +26,9 @@ public class EnemyAI : MonoBehaviour
     public float movementSpeed = 3.5f;
     public float followSpeed = 1f;
 
+    private float timeSinceLastToggle = 0f;
+    private float toggleInterval = 0.3f;
+    [SerializeField] private Image DamageIndecator;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -83,6 +86,8 @@ public class EnemyAI : MonoBehaviour
         agent.isStopped = false;
         StartCoroutine(DecreaseDetection());
         EndActivity(); // Immediately resume patrol without waiting
+        DamageIndecator.enabled = false;
+
     }
 
     IEnumerator DecreaseDetection()
@@ -204,6 +209,14 @@ public class EnemyAI : MonoBehaviour
         directionToPlayer.y = 0;
         Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+
+        // Toggle the image on and off every 0.5 seconds
+        timeSinceLastToggle += Time.deltaTime;
+        if (timeSinceLastToggle >= toggleInterval)
+        {
+            DamageIndecator.enabled = !DamageIndecator.enabled;
+            timeSinceLastToggle = 0f;
+        }
     }
 
     void FollowPlayer()
