@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cheryl Calm
+  m_Name: Ferg Angry Walk
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 245689101, guid: 344bc56080b9e924ca90e6a893e6f98c, type: 3}
+      value: {fileID: -1622435269, guid: 6334273f71d26244a9a353146343146b, type: 3}
     - time: 0.33333334
-      value: {fileID: 550499829, guid: 344bc56080b9e924ca90e6a893e6f98c, type: 3}
+      value: {fileID: 1930260017, guid: 6334273f71d26244a9a353146343146b, type: 3}
     - time: 0.6666667
-      value: {fileID: -99230141, guid: 344bc56080b9e924ca90e6a893e6f98c, type: 3}
+      value: {fileID: 1697417267, guid: 6334273f71d26244a9a353146343146b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 245689101, guid: 344bc56080b9e924ca90e6a893e6f98c, type: 3}
-    - {fileID: 550499829, guid: 344bc56080b9e924ca90e6a893e6f98c, type: 3}
-    - {fileID: -99230141, guid: 344bc56080b9e924ca90e6a893e6f98c, type: 3}
+    - {fileID: -1622435269, guid: 6334273f71d26244a9a353146343146b, type: 3}
+    - {fileID: 1930260017, guid: 6334273f71d26244a9a353146343146b, type: 3}
+    - {fileID: 1697417267, guid: 6334273f71d26244a9a353146343146b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

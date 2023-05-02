@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25ebd7d34fb0e944bb59c9898afe02a3
+guid: daa83f5abde7bcf4a9cf536a95e62b0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,7 +51,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -101,17 +101,65 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cheryl_0
+      name: Cheryl Back Walk_0
       rect:
         serializedVersion: 2
-        x: 291
-        y: 376
-        width: 252
-        height: 592
+        x: 100
+        y: 136
+        width: 92
+        height: 215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3be089fc9d784840aae4056a45861d0
-      internalID: 1578830375
+      spriteID: b7ef33ecb27109d40b43eabf3b6860ad
+      internalID: 2056158743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cheryl_1
+      name: Cheryl Back Walk_1
       rect:
         serializedVersion: 2
-        x: 1130
-        y: 376
-        width: 251
-        height: 597
+        x: 402
+        y: 138
+        width: 92
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69dfd572ef7f33d4bade1fa1484830e4
-      internalID: 240362443
+      spriteID: e52197abf6f7e9f4ba3d0fd31c273b18
+      internalID: 2025785703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cheryl_2
+      name: Cheryl Back Walk_2
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 381
-        width: 251
-        height: 593
+        x: 704
+        y: 136
+        width: 91
+        height: 215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1053b26d1a2f2f84cb3ac89ed01fdfab
-      internalID: -212782963
+      spriteID: f989b44c0ad6321499c8a64a4f48b826
+      internalID: 1987922626
       vertices: []
       indices: 
       edges: []
@@ -170,7 +218,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2b141fcb77de801479e54a34fab050ba
+    spriteID: 13992062bf8db0848a85933819d11029
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +226,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cheryl_1: 240362443
-      Cheryl_0: 1578830375
-      Cheryl_2: -212782963
+      Cheryl Back Walk_1: 2025785703
+      Cheryl Back Walk_0: 2056158743
+      Cheryl Back Walk_2: 1987922626
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1

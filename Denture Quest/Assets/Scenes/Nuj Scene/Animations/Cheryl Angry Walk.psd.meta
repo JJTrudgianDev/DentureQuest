@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 794d2da2b95469f4097132511ec37fd1
+guid: 950a4ef2ab4eddd459f778bbd915f241
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,7 +51,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -101,17 +101,65 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fergie_2_0
+      name: Cheryl Angry Walk_0
       rect:
         serializedVersion: 2
-        x: 264
-        y: 384
-        width: 308
-        height: 604
+        x: 102
+        y: 138
+        width: 90
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b5431fe0e55b24a8b58af28ed8dc28
-      internalID: -1428589013
+      spriteID: 25781a254800b5c4ea30f92a17ce84b3
+      internalID: -644625815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fergie_2_1
+      name: Cheryl Angry Walk_1
       rect:
         serializedVersion: 2
-        x: 1102
-        y: 382
-        width: 309
-        height: 603
+        x: 403
+        y: 137
+        width: 90
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1690d29f58767f408664a63c1a0e899
-      internalID: -1946944547
+      spriteID: 72c3e2809057b5047bc76c1266eb1637
+      internalID: 207506623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fergie_2_2
+      name: Cheryl Angry Walk_2
       rect:
         serializedVersion: 2
-        x: 1931
-        y: 384
-        width: 308
-        height: 604
+        x: 705
+        y: 138
+        width: 90
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc8b71799c3541c4d94fdd6e011cf79b
-      internalID: 673071143
+      spriteID: 15106094704adc649bddd4ab0c9d11ea
+      internalID: -646401233
       vertices: []
       indices: 
       edges: []
@@ -170,7 +218,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 190c1121485ab7042a14621fa8fb3501
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +226,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fergie_2_1: -1946944547
-      Fergie_2_2: 673071143
-      Fergie_2_0: -1428589013
+      Cheryl Angry Walk_1: 207506623
+      Cheryl Angry Walk_2: -646401233
+      Cheryl Angry Walk_0: -644625815
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
