@@ -156,10 +156,10 @@ TextureImporter:
       name: Cheryl Back Walk_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 136
-        width: 92
-        height: 215
+        x: 101
+        y: 138
+        width: 91
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7ef33ecb27109d40b43eabf3b6860ad
-      internalID: 2056158743
+      spriteID: 72f29407e146edb42b8ad1f9ec992354
+      internalID: -362779207
       vertices: []
       indices: 
       edges: []
@@ -178,9 +178,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 402
-        y: 138
+        y: 136
         width: 92
-        height: 213
+        height: 216
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e52197abf6f7e9f4ba3d0fd31c273b18
-      internalID: 2025785703
+      spriteID: fd8dd76dfff9aa04e9f154eb437366f1
+      internalID: 220326670
       vertices: []
       indices: 
       edges: []
@@ -199,9 +199,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 136
+        y: 138
         width: 91
-        height: 215
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,8 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f989b44c0ad6321499c8a64a4f48b826
-      internalID: 1987922626
+      spriteID: d14c664bc80802b4e897720ebb96558e
+      internalID: 1894002376
       vertices: []
       indices: 
       edges: []
@@ -218,7 +218,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 13992062bf8db0848a85933819d11029
+    spriteID: 68a65d49837ee3c42b2ba16794163b79
     internalID: 0
     vertices: []
     indices: 
@@ -226,9 +226,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cheryl Back Walk_1: 2025785703
-      Cheryl Back Walk_0: 2056158743
-      Cheryl Back Walk_2: 1987922626
+      Cheryl Back Walk_1: 220326670
+      Cheryl Back Walk_0: -362779207
+      Cheryl Back Walk_2: 1894002376
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
