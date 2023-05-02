@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ferg Back Walk
+  m_Name: Cheryl Back
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 771861119, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
+      value: {fileID: -362779207, guid: daa83f5abde7bcf4a9cf536a95e62b0c, type: 3}
     - time: 0.33333334
-      value: {fileID: 2025520876, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
+      value: {fileID: 220326670, guid: daa83f5abde7bcf4a9cf536a95e62b0c, type: 3}
     - time: 0.6666667
-      value: {fileID: 2025520876, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
+      value: {fileID: 220326670, guid: daa83f5abde7bcf4a9cf536a95e62b0c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 771861119, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
-    - {fileID: 2025520876, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
-    - {fileID: 2025520876, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
+    - {fileID: -362779207, guid: daa83f5abde7bcf4a9cf536a95e62b0c, type: 3}
+    - {fileID: 220326670, guid: daa83f5abde7bcf4a9cf536a95e62b0c, type: 3}
+    - {fileID: 220326670, guid: daa83f5abde7bcf4a9cf536a95e62b0c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
