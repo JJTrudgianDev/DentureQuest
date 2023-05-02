@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 344bc56080b9e924ca90e6a893e6f98c
+guid: 60532fd440d645848aa7d7eb7b47a083
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,7 +51,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -101,17 +101,65 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cheryl_2_0
+      name: Ferg Calm Walk_0
       rect:
         serializedVersion: 2
-        x: 292
-        y: 380
-        width: 251
-        height: 593
+        x: 91
+        y: 139
+        width: 112
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4db99404a3dc4b64d889b3832e712fa4
-      internalID: 245689101
+      spriteID: 70fb4b3c502a8a84ea4a3e0b041727c2
+      internalID: -1229874296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cheryl_2_1
+      name: Ferg Calm Walk_1
       rect:
         serializedVersion: 2
-        x: 1130
-        y: 377
-        width: 251
-        height: 596
+        x: 393
+        y: 136
+        width: 110
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5513123f5d7d8574ebb7982f7fd2700d
-      internalID: 550499829
+      spriteID: 7a309c635c25b8d4db957f6ddf12bea8
+      internalID: -2024808542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cheryl_2_2
+      name: Ferg Calm Walk_2
       rect:
         serializedVersion: 2
-        x: 1960
-        y: 380
-        width: 249
-        height: 593
+        x: 694
+        y: 139
+        width: 112
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e949f991adc38c46b7cbbb3dfdb68a9
-      internalID: -99230141
+      spriteID: 219e02a0f7eed9f4eb26a5305234bc9c
+      internalID: 1609470278
       vertices: []
       indices: 
       edges: []
@@ -170,7 +218,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c093ac9679518c143afaecbbe34c08ee
+    spriteID: 64931b6f9e755d14ba04ff2844ac7533
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +226,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cheryl_2_0: 245689101
-      Cheryl_2_1: 550499829
-      Cheryl_2_2: -99230141
+      Ferg Calm Walk_0: -1229874296
+      Ferg Calm Walk_2: 1609470278
+      Ferg Calm Walk_1: -2024808542
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1

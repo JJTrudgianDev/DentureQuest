@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ae5d5b08dea4c14aac00c41f4b017db
+guid: bf8695664d0bd7b4bbcee1e383568c50
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,7 +51,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -101,17 +101,65 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fergie_0
+      name: Ferg Back Walk_0
       rect:
         serializedVersion: 2
-        x: 417
-        y: 268
-        width: 325
-        height: 638
+        x: 91
+        y: 138
+        width: 112
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86530215f5ccd7446a0ba79b572bc153
-      internalID: 816409436
+      spriteID: d1ada4c95a96e7f4ca328250f7839dbe
+      internalID: 771861119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fergie_1
+      name: Ferg Back Walk_1
       rect:
         serializedVersion: 2
-        x: 1290
-        y: 266
-        width: 325
-        height: 640
+        x: 393
+        y: 139
+        width: 111
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1772b20e4879c1345a9cfe088eb1df01
-      internalID: -1970122072
+      spriteID: 0124b97633e994b47a47b673ccef52cf
+      internalID: 2025520876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fergie_2
+      name: Ferg Back Walk_2
       rect:
         serializedVersion: 2
-        x: 2163
-        y: 268
-        width: 327
-        height: 638
+        x: 694
+        y: 138
+        width: 112
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,29 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebbdbf48bb350c44c81b7f0baa373de6
-      internalID: -472643621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fergie_3
-      rect:
-        serializedVersion: 2
-        x: 3036
-        y: 266
-        width: 325
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 997bec6907e6e5c4b838676c7b8ffe8d
-      internalID: 515067845
+      spriteID: fbf5870856b20ec42872bbd8514a6e9d
+      internalID: 1610283833
       vertices: []
       indices: 
       edges: []
@@ -191,7 +218,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 92c5d7054be64344c8aba0761a389cf2
+    spriteID: e4ea2d0bd8bf43a48a440baba50743b6
     internalID: 0
     vertices: []
     indices: 
@@ -199,10 +226,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fergie_2: -472643621
-      Fergie_3: 515067845
-      Fergie_1: -1970122072
-      Fergie_0: 816409436
+      Ferg Back Walk_2: 1610283833
+      Ferg Back Walk_1: 2025520876
+      Ferg Back Walk_0: 771861119
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
