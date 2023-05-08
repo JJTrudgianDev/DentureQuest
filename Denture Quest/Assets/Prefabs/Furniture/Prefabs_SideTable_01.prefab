@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 7937528339956951810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.244501, y: 0, z: -1.9567183}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 2.5000002, y: 2.5000002, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5061688237523296874}
@@ -151,10 +151,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7944425246918419246, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.05800018
+      objectReference: {fileID: 0}
+    - target: {fileID: -7944425246918419246, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39049986
+      objectReference: {fileID: 0}
     - target: {fileID: -7686099094975646809, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 75a3b6143faeca846b20cea82c8d92e7, type: 2}
+    - target: {fileID: 308003000475230523, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.058
+      objectReference: {fileID: 0}
+    - target: {fileID: 308003000475230523, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.553
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
       propertyPath: m_Name
       value: Blockout_SideTable_03 1
