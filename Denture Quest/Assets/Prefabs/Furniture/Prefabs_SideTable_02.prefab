@@ -214,11 +214,15 @@ PrefabInstance:
     - target: {fileID: -7338685132231306875, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 45d8430a46de77241bfa4aa51669ccc3, type: 2}
+      objectReference: {fileID: 2100000, guid: 78a2f701b5ef1f043b71956072fe90fa, type: 2}
+    - target: {fileID: -7338685132231306875, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78a2f701b5ef1f043b71956072fe90fa, type: 2}
     - target: {fileID: -5785133736985730109, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 45d8430a46de77241bfa4aa51669ccc3, type: 2}
+      objectReference: {fileID: 2100000, guid: 03b89b02f0c087f498147c253168c0de, type: 2}
     - target: {fileID: -5785133736985730109, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -226,7 +230,7 @@ PrefabInstance:
     - target: {fileID: -3746886058274316283, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 45d8430a46de77241bfa4aa51669ccc3, type: 2}
+      objectReference: {fileID: 2100000, guid: 03b89b02f0c087f498147c253168c0de, type: 2}
     - target: {fileID: 919132149155446097, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
       propertyPath: m_Name
       value: Blockout_SideTable_02
@@ -238,6 +242,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2544956910475092076, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
   m_PrefabInstance: {fileID: 8894905718489782863}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &8389021370257829596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6350230832764402211}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.354375, y: 0.2875, z: 0.45}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1062014052549367113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,19 +274,6 @@ MonoBehaviour:
   emptyObject: {fileID: 5519105144072318404}
   cameraName: Cam
   targetObjectToEnableTrigger: {fileID: 0}
---- !u!65 &8389021370257829596
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6350230832764402211}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.354375, y: 0.2875, z: 0.45}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7969106611991535557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1578223195731019146, guid: 95c010a6cc88fcc4e8b3aab2dd34efde, type: 3}
