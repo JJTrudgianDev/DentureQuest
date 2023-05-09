@@ -462,6 +462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7670882995250941273}
+  - component: {fileID: 8204939440825803781}
   m_Layer: 0
   m_Name: Prefabs_Shower
   m_TagString: Untagged
@@ -487,6 +488,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8204939440825803781
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007499717868525539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6098557, y: 3.0125222, z: 1.5217667}
+  m_Center: {x: -0.6505127, y: 1.5009215, z: 0.0033874512}
 --- !u!1 &7063890160996075907
 GameObject:
   m_ObjectHideFlags: 0
