@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4711633685037269798}
   - component: {fileID: 8560443812343073923}
   - component: {fileID: 5847986801732925513}
+  - component: {fileID: 8674817763590886773}
   m_Layer: 0
   m_Name: Prefabs_Stove_01
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8674817763590886773
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5343738055970331036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8743250376813234415, guid: 284a9b6c28f77c14291350c0791b905f, type: 3}

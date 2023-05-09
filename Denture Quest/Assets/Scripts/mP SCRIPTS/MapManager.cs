@@ -82,7 +82,7 @@ public class MapManager : MonoBehaviour
 		{
 			Character.TrySetDirection(Direction.Right);
 		}
-        else if (Input.GetKeyUp(KeyCode.Return))
+        else if (Input.GetKeyUp(KeyCode.E))
         {
 			SceneManager.LoadScene(Character.CurrentPin.SceneToLoad);
         }
