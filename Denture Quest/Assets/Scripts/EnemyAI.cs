@@ -29,12 +29,19 @@ public class EnemyAI : MonoBehaviour
     private float timeSinceLastToggle = 0f;
     private float toggleInterval = 0.3f;
     [SerializeField] private Image DamageIndecator;
+
+    public Animator animator;
+
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.speed = movementSpeed;
         SelectRandomPoint();
         player = GameObject.FindGameObjectWithTag("Player");
+        animator.SetFloat("Speed", movementSpeed);
+
+
     }
 
     void Update()
@@ -111,6 +118,7 @@ public class EnemyAI : MonoBehaviour
     {
         performingActivity = true;
         ActivityType activity = activities[currentPoint];
+        movementSpeed = 0f;
 
         switch (activity)
         {
@@ -172,25 +180,30 @@ public class EnemyAI : MonoBehaviour
 
     void BrushTeeth()
     {
+        movementSpeed = 0;
         Debug.Log("Brushing teeth at patrol point " + currentPoint);
     }
     void LookOutWindow()
     {
+        movementSpeed = 0;
         Debug.Log("Looking out window at patrol point " + currentPoint);
     }
 
     void DoWork()
     {
+        movementSpeed = 0;
         Debug.Log("DoWork at patrol point " + currentPoint);
     }
 
     void UsePhone()
     {
+        movementSpeed = 0;
         Debug.Log("UsePhone at patrol point " + currentPoint);
     }
 
     void Dishes()
     {
+        movementSpeed = 0;
         Debug.Log("Dishes at patrol point " + currentPoint);
     }
 
