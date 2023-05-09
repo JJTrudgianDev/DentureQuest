@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ferg Chase
+  m_Name: FergB
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1622435269, guid: 6334273f71d26244a9a353146343146b, type: 3}
+      value: {fileID: 1709456197, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
     - time: 0.5
-      value: {fileID: 1930260017, guid: 6334273f71d26244a9a353146343146b, type: 3}
+      value: {fileID: -1399999859, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
     - time: 1
-      value: {fileID: -1622435269, guid: 6334273f71d26244a9a353146343146b, type: 3}
+      value: {fileID: -1399999859, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1622435269, guid: 6334273f71d26244a9a353146343146b, type: 3}
-    - {fileID: 1930260017, guid: 6334273f71d26244a9a353146343146b, type: 3}
-    - {fileID: -1622435269, guid: 6334273f71d26244a9a353146343146b, type: 3}
+    - {fileID: 1709456197, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
+    - {fileID: -1399999859, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
+    - {fileID: -1399999859, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
