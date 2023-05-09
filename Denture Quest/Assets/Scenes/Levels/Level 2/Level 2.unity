@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6cb015fc34528f14ab566f4c910828cb, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 5fcbcd31da1bdc54f80947eaf93df897, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -519,6 +519,8 @@ MonoBehaviour:
   alertnessImage: {fileID: 1985587622}
   movementSpeed: 2
   followSpeed: 2
+  DamageIndecator: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!135 &630971957
 SphereCollider:
   m_ObjectHideFlags: 0
