@@ -40,8 +40,22 @@
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+<<<<<<< HEAD
                 "key": "editor.autoRecalculateCollisions",
                 "value": "{\"m_Value\":false}"
+=======
+<<<<<<< Updated upstream
+                "key": "editor.autoRecalculateCollisions",
+                "value": "{\"m_Value\":false}"
+            },
+            {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "ShapeComponent.ResetSettings",
+=======
+                "key": "editor.toolbarIconGUI",
+>>>>>>> Stashed changes
+                "value": "{\"m_Value\":false}"
+>>>>>>> ZachBranch
             }
         ]
     }
