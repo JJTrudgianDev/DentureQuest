@@ -108,7 +108,7 @@ MonoBehaviour:
   detectionRange: 5
   emptyObject: {fileID: 0}
   cameraName: Cam
-  targetObjectToEnableTrigger: {fileID: 4489101208322898607}
+  targetObjectToEnableCollider: {fileID: 0}
 --- !u!65 &1977821681827557270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -229,7 +229,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2683828258700131780, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
+    - {fileID: 1977821681915174527, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
 --- !u!4 &4489101208322898597 stripped
 Transform:
@@ -241,3 +243,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2683828258700131778, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
   m_PrefabInstance: {fileID: 1977821681705879405}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5361553473733835365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489101208322898607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d59c2f6286ff2b4b94fba08c8953025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockTag: KeyOne

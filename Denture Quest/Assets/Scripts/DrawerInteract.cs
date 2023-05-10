@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using System.Collections;
 
@@ -10,7 +9,7 @@ public class DrawerInteract : MonoBehaviour
     [SerializeField] private float detectionRange = 5f;
     [SerializeField] private Transform emptyObject;
     [SerializeField] private string cameraName = "Cam";
-    [SerializeField] private GameObject targetObjectToEnableTrigger; // Add this field
+    [SerializeField] private GameObject targetObjectToEnableCollider;
 
     private Vector3 initialPosition;
     private Coroutine moveCoroutine;
@@ -112,21 +111,21 @@ public class DrawerInteract : MonoBehaviour
         if (targetPosition == emptyObject.position)
         {
             // Object has reached empty object position
-            if (targetObjectToEnableTrigger != null)
+            if (targetObjectToEnableCollider != null)
             {
-                Collider targetCollider = targetObjectToEnableTrigger.GetComponent<Collider>();
+                SphereCollider targetCollider = targetObjectToEnableCollider.GetComponent<SphereCollider>();
                 if (targetCollider != null)
                 {
-                    targetCollider.isTrigger = true;
+                    targetCollider.enabled = true;
                 }
                 else
                 {
-                    Debug.LogWarning("No Collider component found on the target object.");
+                    Debug.LogWarning("No SphereCollider component found on the target object.");
                 }
             }
             else
             {
-                Debug.LogWarning("Target object to enable trigger is not set.");
+                Debug.LogWarning("Target object to enable collider is not set.");
             }
         }
         else

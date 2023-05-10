@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 2683828258700131784}
   - component: {fileID: 2683828258700131783}
   - component: {fileID: 2683828258700131782}
-  - component: {fileID: 2683828258700131780}
   - component: {fileID: 2683828258700131779}
-  - component: {fileID: 2683828258700131785}
-  - component: {fileID: 1977821681915174527}
+  - component: {fileID: 5361553473848344424}
+  - component: {fileID: 5361553473848344425}
   m_Layer: 0
   m_Name: KeyOne
   m_TagString: KeyOne
@@ -31,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2683828258700131778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.461, y: 0.405, z: -4.567}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2683828258700131780
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2683828258700131778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2683828258700131779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -116,21 +102,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2683828258700131785
-MeshCollider:
+--- !u!114 &5361553473848344424
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2683828258700131778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5597002278806442958, guid: 782e83363c22eca43ba9c3b00f7ebccc, type: 3}
---- !u!65 &1977821681915174527
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d59c2f6286ff2b4b94fba08c8953025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockTag: KeyOne
+  interactionDistance: 5
+  keyUIImage: {fileID: 0}
+--- !u!65 &5361553473848344425
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,5 +128,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.18538564, y: 0.080882475, z: 0.017509304}
+  m_Size: {x: 0.25, y: 0.25, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}

@@ -9,6 +9,7 @@ public class ObjectUnlockManager : MonoBehaviour
     public struct KeyLockPair
     {
         public GameObject lockedObject;
+        public GameObject keyObject;
         public string keyTag;
         public bool isUnlocked;
         public Image unlockImage;
@@ -21,8 +22,11 @@ public class ObjectUnlockManager : MonoBehaviour
     {
         foreach (KeyLockPair pair in keyLockPairs)
         {
-            pair.lockedObject.SetActive(true);
-            pair.unlockImage.enabled = false;
+            if (pair.lockedObject != null)
+                pair.lockedObject.SetActive(true);
+
+            if (pair.unlockImage != null)
+                pair.unlockImage.enabled = false;
         }
     }
 
@@ -36,21 +40,29 @@ public class ObjectUnlockManager : MonoBehaviour
 
     private void CheckForKeyAndUnlockObject()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(player.position, 1f);
-        foreach (Collider hitCollider in hitColliders)
+        Collider[] hitColliders = new Collider[1]; // Adjust the size according to your needs
+        int numColliders = Physics.OverlapSphereNonAlloc(player.position, 5f, hitColliders);
+
+        for (int i = 0; i < numColliders; i++)
         {
-            for (int i = 0; i < keyLockPairs.Count; i++)
+            Collider hitCollider = hitColliders[i];
+
+            SphereCollider sphereCollider = hitCollider.GetComponent<SphereCollider>();
+            if (sphereCollider != null)
             {
-                if (hitCollider.CompareTag(keyLockPairs[i].keyTag) && !keyLockPairs[i].isUnlocked)
+                for (int j = 0; j < keyLockPairs.Count; j++)
                 {
-                    UnlockObject(i);
-                    hitCollider.gameObject.SetActive(false);
-                    break;
-                }
-                else if (hitCollider.CompareTag(keyLockPairs[i].keyTag) && keyLockPairs[i].isUnlocked)
-                {
-                    DestroyLock(i);
-                    break;
+                    if (hitCollider.CompareTag(keyLockPairs[j].keyTag) && !keyLockPairs[j].isUnlocked)
+                    {
+                        UnlockObject(j);
+                        hitCollider.gameObject.SetActive(false);
+                        break;
+                    }
+                    else if (hitCollider.CompareTag(keyLockPairs[j].keyTag) && keyLockPairs[j].isUnlocked)
+                    {
+                        DestroyLock(j);
+                        break;
+                    }
                 }
             }
         }
