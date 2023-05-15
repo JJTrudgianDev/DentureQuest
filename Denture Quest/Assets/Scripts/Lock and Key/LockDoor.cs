@@ -13,7 +13,7 @@ public class LockDoor : MonoBehaviour
 
     public RawImage keyUIImage; // Reference to the UI image for the key
     public GameObject objectToDisable; // Reference to the GameObject to disable
-    public float shrinkSpeed = 1f; // Speed at which the lock will shrink
+    public float shrinkSpeed = 10f; // Speed at which the lock will shrink
 
     private DrawerInteract drawerInteract; // Reference to the DrawerInteract script
 
