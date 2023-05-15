@@ -3,14 +3,16 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using static UnityEngine.GraphicsBuffer;
+
 public class EnemyAI : MonoBehaviour
 {
 
     public Transform[] patrolPoints;
     private int currentPoint = 0;
     private NavMeshAgent agent;
-    private GameObject player;
-    private bool playerInRange = false;
+    public GameObject player;
+    public bool playerInRange = false;
 
     public enum ActivityType { None, BrushTeeth, LookOutWindow, DoWork, UsePhone, Dishes }
     public ActivityType[] activities;
@@ -18,8 +20,19 @@ public class EnemyAI : MonoBehaviour
     private float timer = 0f;
     private bool performingActivity = false;
 
+
+    // LINE OF SIGHT
+    public bool hasSight = false;
+    public bool drawDebugInfo = false;
+    public Vector3 headPosition = new Vector3(0f, 1.8f, 0f);
+    public Vector3 playerHeadPosition = new Vector3(0f, 0.4f, 0f);
+    public float fieldOfViewAngle = 100f;
+    public float playerInRangeDistance = 3f;
+    private RaycastHit hit;
+
+
     public float detectionTime = 5f;
-    private float detectionTimer = 0f;
+    public float detectionTimer = 0f;
     private bool detectingPlayer = false;
     public GameObject detectionBar;
     public Image alertnessImage;
@@ -47,15 +60,90 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        LineOfSightCheck();
+
+        UpdatePlayerInRange();
+
+        Debug.Log("detectingPlayer = " + detectingPlayer);
+        Debug.Log("detectingTimer = " + detectionTimer);
+
         UpdateActivity();
+
         UpdateDetection();
-        animator.SetFloat("Speed", movementSpeed);
+
+        if (animator != null)
+        {
+            animator.SetFloat("Speed", movementSpeed);
+        }
 
         if (!playerInRange) // Only face the destination if the player is not in range
         {
             FaceDestination();
         }
     }
+
+
+    public void UpdatePlayerInRange()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position) < playerInRangeDistance)
+        {
+            playerInRange = true;
+        }
+        else
+        {
+            playerInRange = false;
+            detectingPlayer = false;
+        }
+    }
+
+    public void LineOfSightCheck()
+    {
+        //Debug.Log("Running Line of Sight check.");
+
+
+
+        // draw a Linecast from the enemy to the player (or it might hit another collider first while trying to reach the player)
+        if (Physics.Linecast(transform.position + headPosition, player.transform.position + playerHeadPosition, out hit))
+        {
+
+            //Debug.Log("Did a LineCast and hit: " + hit.collider.name);
+
+            // if the name of the Collider on the player (target) == the name of the Collider the raycast hit first...
+            //if (player.GetComponentInChildren<Collider>().name == hit.collider.name)
+            if (hit.collider.tag == "Player")
+            {
+
+                //Debug.Log("Linecast hit the player.");
+
+                // if it hit the player collider, was the angle of the Linecast within the enemy's fieldOfViewAngle?
+                if (Vector3.Angle(player.transform.position - transform.position, transform.forward) <= fieldOfViewAngle)
+                {
+                    // if the enemy saw the player directly, within their fieldOfViewAngle, draw a green line, and other stuff...
+                    if (drawDebugInfo) { Debug.DrawLine(player.transform.position + playerHeadPosition, transform.position + headPosition, Color.green); }
+                    hasSight = true;
+                    //lastSightingLocation = player.transform.position;
+                }
+                else
+                { // else, would be able to see player unobstructed, but they are out of their fieldOfView
+                    hasSight = false;
+                    if (drawDebugInfo) { Debug.DrawLine(player.transform.position + playerHeadPosition, transform.position + headPosition, Color.blue); }
+                }
+            }
+            else
+            { // else, line of sight was blocked by an object, draw a red line
+                if (drawDebugInfo) { Debug.DrawLine(player.transform.position + playerHeadPosition, transform.position + headPosition, Color.red); }
+                hasSight = false;
+                //Debug.Log("LineCast hit something else instead of player: " + hit.collider.name);
+            }
+        }
+
+        //Debug.Log("Enemy hasSight = " + hasSight);
+
+        // debug log which collider is hit by sight ray
+        //Debug.Log ("Blocked by " + hit.collider.name);    // Output the name of the collider that was hit
+
+    }
+
 
     void UpdateActivity()
     {
@@ -65,40 +153,70 @@ public class EnemyAI : MonoBehaviour
             EndActivity();
     }
 
+
     void UpdateDetection()
     {
-        if (!detectingPlayer) return;
-        detectionTimer = Mathf.Clamp(playerInRange ? detectionTimer + Time.deltaTime : detectionTimer - Time.deltaTime, 0f, detectionTime);
-        alertnessImage.fillAmount = detectionTimer / detectionTime;
-        if (detectionTimer >= detectionTime) DetectPlayer();
+        if (detectingPlayer && hasSight)
+        {
+            detectionTimer = Mathf.Clamp(playerInRange ? detectionTimer + Time.deltaTime : detectionTimer - Time.deltaTime, 0f, detectionTime);
+            alertnessImage.fillAmount = detectionTimer / detectionTime;
+            if (detectionTimer >= detectionTime) DetectPlayer();
+        }
     }
+
 
     void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player")) return;
-        playerInRange = detectingPlayer = true;
-        detectionTimer = 0f;
-        detectionBar.SetActive(true);
-        agent.isStopped = true;
+        // if detect something that isn't player, return
+        //if (!other.CompareTag("Player")) return;
+        //playerInRange = detectingPlayer = true;
     }
+
 
     void OnTriggerStay(Collider other)
     {
-        if (!other.CompareTag("Player")) return;
-        FacePlayer();
-        FollowPlayer();
+        // if not yet detecting player
+        if (other.gameObject.tag == "Player")
+        {
+            if (!detectingPlayer)
+            {
+                // if inside sphere, and hasSight
+                if (hasSight)
+                {
+                    detectingPlayer = true;
+                    detectionTimer = 0f;
+                    detectionBar.SetActive(true);
+                    agent.isStopped = true;
+                }
+            }
+        }
+
+
+        //if (!other.CompareTag("Player")) return;
+
+        // when closer to player, face them and follow them
+        if (detectingPlayer)
+        {
+            FacePlayer();
+            FollowPlayer();
+        }
+
+
     }
+
 
     void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        detectingPlayer = playerInRange = false;
+
+        //detectingPlayer = playerInRange = false;
         agent.isStopped = false;
         StartCoroutine(DecreaseDetection());
         EndActivity(); // Immediately resume patrol without waiting
         DamageIndecator.enabled = false;
 
     }
+
 
     IEnumerator DecreaseDetection()
     {
