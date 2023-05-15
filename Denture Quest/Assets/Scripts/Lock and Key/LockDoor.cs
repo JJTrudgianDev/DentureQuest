@@ -10,8 +10,10 @@ public class LockDoor : MonoBehaviour
     private Camera playerCamera;
     private RaycastHit hitInfo;
 
+
     public RawImage keyUIImage; // Reference to the UI image for the key
     public GameObject objectToDisable; // Reference to the GameObject to disable
+    public float shrinkSpeed = 1f; // Speed at which the lock will shrink
 
     private DrawerInteract drawerInteract; // Reference to the DrawerInteract script
 
@@ -83,7 +85,7 @@ public class LockDoor : MonoBehaviour
     {
         while (transform.localScale.magnitude > 0.1)
         {
-            transform.localScale -= Vector3.one * Time.deltaTime;
+            transform.localScale -= Vector3.one * Time.deltaTime * shrinkSpeed;
             yield return null;
         }
 
