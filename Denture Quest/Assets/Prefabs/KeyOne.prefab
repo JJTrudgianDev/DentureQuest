@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2683828258700131779}
   - component: {fileID: 5361553473848344424}
   - component: {fileID: 5361553473848344425}
+  - component: {fileID: 9178549684375554552}
   m_Layer: 0
   m_Name: KeyOne
   m_TagString: KeyOne
@@ -130,3 +131,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.25, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!64 &9178549684375554552
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2683828258700131778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5597002278806442958, guid: 782e83363c22eca43ba9c3b00f7ebccc, type: 3}
