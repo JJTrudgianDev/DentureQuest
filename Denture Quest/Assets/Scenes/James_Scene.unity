@@ -756,6 +756,7 @@ MonoBehaviour:
   interactionDistance: 5
   keyUIImage: {fileID: 1961493617}
   objectToDisable: {fileID: 703499400}
+  shrinkSpeed: 10
 --- !u!65 &1441396280
 BoxCollider:
   m_ObjectHideFlags: 0
