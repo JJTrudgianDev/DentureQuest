@@ -66,23 +66,23 @@ public class MapManager : MonoBehaviour
 	/// </summary>
 	private void CheckForInput()
 	{
-		if (Input.GetKeyDown(KeyCode.W))
+		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 		{
 			Character.TrySetDirection(Direction.Up);
 		}
-		else if(Input.GetKeyDown(KeyCode.S))
+		else if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
 		{
 			Character.TrySetDirection(Direction.Down);
 		}
-		else if(Input.GetKeyDown(KeyCode.A))
+		else if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
 		{
 			Character.TrySetDirection(Direction.Left);
 		}
-		else if(Input.GetKeyDown(KeyCode.D))
+		else if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
 		{
 			Character.TrySetDirection(Direction.Right);
 		}
-        else if (Input.GetKeyUp(KeyCode.E))
+        else if (Input.GetKeyUp(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Space))
         {
 			SceneManager.LoadScene(Character.CurrentPin.SceneToLoad);
         }

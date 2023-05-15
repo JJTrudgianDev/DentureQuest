@@ -15,11 +15,14 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     x: 2249
     y: 302.5
     width: 1206
     height: 715
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     x: 0
 <<<<<<< Updated upstream
@@ -32,7 +35,16 @@ MonoBehaviour:
     width: 1904
     height: 981
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    x: 2249
+    y: 302.5
+    width: 1206
+    height: 715
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_ShowMode: 4
   m_Title:
   m_RootView: {fileID: 6}
@@ -59,6 +71,8 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     width: 1206
     height: 665
   m_MinSize: {x: 679, y: 492}
@@ -66,6 +80,7 @@ MonoBehaviour:
   vertical: 0
   controlID: 119
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     width: 1920
     height: 987
@@ -99,7 +114,18 @@ MonoBehaviour:
   controlID: 17
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    width: 1206
+    height: 665
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 119
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -111,9 +137,12 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
   m_Name:
   m_EditorClassIdentifier:
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
   m_Name: InspectorWindow
 =======
@@ -124,19 +153,29 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  m_Name:
+  m_EditorClassIdentifier:
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 921
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     width: 285
     height: 665
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
 =======
+>>>>>>> JamesBranch
     width: 389
     height: 987
   m_MinSize: {x: 275, y: 50}
@@ -151,7 +190,17 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    width: 285
+    height: 665
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_Panes:
   - {fileID: 13}
   m_Selected: 0
@@ -174,9 +223,12 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     width: 228
     height: 394
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     width: 379
     height: 597
@@ -184,7 +236,14 @@ MonoBehaviour:
     width: 360
     height: 552
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    width: 228
+    height: 394
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -209,10 +268,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     y: 394
     width: 921
     height: 271
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     y: 597
     width: 1531
@@ -228,7 +290,15 @@ MonoBehaviour:
     height: 379
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    y: 394
+    width: 921
+    height: 271
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
@@ -284,14 +354,23 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     width: 1206
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     width: 1920
 =======
     width: 1904
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    width: 1206
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -314,9 +393,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     y: 695
     width: 1206
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     y: 1017
     width: 1920
@@ -324,7 +406,14 @@ MonoBehaviour:
     y: 961
     width: 1904
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    y: 695
+    width: 1206
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -353,8 +442,11 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
   controlID: 92
 =======
+>>>>>>> JamesBranch
   controlID: 169
 =======
     width: 1454
@@ -364,7 +456,13 @@ MonoBehaviour:
   vertical: 1
   controlID: 55
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+  controlID: 92
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,6 +483,8 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     width: 921
     height: 394
   m_MinSize: {x: 403, y: 221}
@@ -392,6 +492,7 @@ MonoBehaviour:
   vertical: 0
   controlID: 93
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     width: 1531
     height: 597
@@ -407,7 +508,18 @@ MonoBehaviour:
   vertical: 0
   controlID: 56
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    width: 921
+    height: 394
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 93
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -419,6 +531,8 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
   m_Name:
   m_EditorClassIdentifier:
   m_Children: []
@@ -429,6 +543,7 @@ MonoBehaviour:
     width: 693
     height: 394
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
   m_Name: SceneView
 =======
@@ -449,7 +564,21 @@ MonoBehaviour:
     width: 1094
     height: 552
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 228
+    y: 0
+    width: 693
+    height: 394
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -468,7 +597,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> JamesBranch
   m_EditorHideFlags: 0
   m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -613,7 +745,12 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_EditorHideFlags: 1
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name:
@@ -627,11 +764,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     x: 2249
     y: 726.5
     width: 920
     height: 250
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     x: 0
     y: 670
@@ -650,7 +790,16 @@ MonoBehaviour:
     height: 358
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    x: 2249
+    y: 726.5
+    width: 920
+    height: 250
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter:
@@ -671,8 +820,11 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
   - Assets
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
   - Assets/Scenes/Levels/Level 1
   m_LastFoldersGridSize: -1
@@ -702,7 +854,13 @@ MonoBehaviour:
       m_OriginalName: 
 =======
   - Assets/Scenes
+<<<<<<< HEAD
+=======
+  - Assets
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_LastFoldersGridSize: -1
   m_LastProjectPath: U:\layout
   m_LockTracker:
@@ -740,8 +898,11 @@ MonoBehaviour:
     m_SelectedIDs:
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     m_ExpandedIDs: 00000000f4350000
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     m_ExpandedIDs: 000000006a6a0000
 =======
@@ -751,7 +912,13 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000dc720000de720000e0720000e2720000e4720000e6720000
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    m_ExpandedIDs: 00000000f4350000
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -828,11 +995,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     x: 3170
     y: 332.5
     width: 284
     height: 644
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     x: 1531
     y: 73
@@ -851,7 +1021,16 @@ MonoBehaviour:
     height: 910
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    x: 3170
+    y: 332.5
+    width: 284
+    height: 644
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization:
@@ -887,11 +1066,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     x: 2249
     y: 332.5
     width: 227
     height: 373
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     x: 0
     y: 73
@@ -910,7 +1092,16 @@ MonoBehaviour:
     height: 531
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    x: 2249
+    y: 332.5
+    width: 227
+    height: 373
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -918,15 +1109,24 @@ MonoBehaviour:
       m_SelectedIDs:
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
       m_ExpandedIDs: 42fbffff
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
       m_ExpandedIDs: 6c35dcffee47dcff6248dcffb048dcffb848dcffc048dcffc848dcffd048dcffd448dcffd848dcffe648dcff5849dcff8449dcffe049dcffe449dcff0e4adcff244adcff3a4adcff504adcff664adcff7c4adcff8a4adcffa24adcffae4adcffb64adcffd64adcffda4adcffde4adcfffc4adcff1c4bdcff204bdcff404bdcff444bdcff624bdcff664bdcff7e4bdcff124cdcff184cdcff24b6dcff28b6dcff84b6dcff88b6dcff04b7dcff6abcdcff1e3ddeff3254deff84bdfaffb8c2faffa8f3ffff206900006e69000094ed0900faed090034ee09003aee090060ee0900acee090084ef09003e960a00
 =======
       m_ExpandedIDs: 96b3ffff54d2ffff10d5ffff54d5ffff98d5ffff32d6ffffdedcffffe0dcffffe8e2ffffd0790000d8790000
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+      m_ExpandedIDs: 42fbffff
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name:
@@ -971,11 +1171,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     x: 2477
     y: 332.5
     width: 691
     height: 373
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     x: 379
     y: 73
@@ -994,7 +1197,16 @@ MonoBehaviour:
     height: 531
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    x: 2477
+    y: 332.5
+    width: 691
+    height: 373
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -1008,10 +1220,13 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     m_Target: {x: -8.327013, y: 2.682075, z: -3.2435539}
     speed: 2
@@ -1027,7 +1242,15 @@ MonoBehaviour:
     m_Value: {x: 3.3530703, y: 4.5165343, z: -21.198189}
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    m_Target: {x: 0, y: 0, z: 0}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0}
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1076,21 +1299,33 @@ MonoBehaviour:
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
 =======
+>>>>>>> JamesBranch
     m_Value: 0.68958944
 =======
 <<<<<<< Updated upstream
     m_Target: {x: 0.12452108, y: 0.15093075, z: -0.01923199, w: 0.9806787}
     speed: 2
     m_Value: {x: 0.12449705, y: 0.15090163, z: -0.01922828, w: 0.98048943}
+<<<<<<< HEAD
+=======
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_Size:
     m_Target: 10
     speed: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     m_Value: 10
 =======
+>>>>>>> JamesBranch
     m_Value: 110.60659
 =======
     m_Target: {x: -0.013755681, y: 0.969983, z: 0.05650763, w: 0.23613852}
@@ -1102,16 +1337,25 @@ MonoBehaviour:
     m_Value: 12.124437
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    m_Value: 10
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     m_Speed: 1
     m_SpeedNormalized: 0.5
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     m_Speed: 1.0646999
     m_SpeedNormalized: 0.53
@@ -1124,7 +1368,14 @@ MonoBehaviour:
     m_Speed: 0.4008
     m_SpeedNormalized: 0.19999999
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1163,7 +1414,10 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     x: 379
     y: 73
@@ -1176,16 +1430,28 @@ MonoBehaviour:
     width: 1920
     height: 1019
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     x: 507
     y: 94
     width: 1532
     height: 790
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch
+=======
 =======
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewsNames: []
   m_SerializedViewsValues: []
@@ -1197,9 +1463,12 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
   m_RenderIMGUI: 0
   m_MaximizeOnPlay: 0
 =======
+>>>>>>> JamesBranch
   m_RenderIMGUI: 1
 =======
   m_TargetSize: {x: 1532, y: 769}
@@ -1208,7 +1477,14 @@ MonoBehaviour:
   m_RenderIMGUI: 0
 >>>>>>> Stashed changes
   m_EnterPlayModeBehavior: 0
+<<<<<<< HEAD
+=======
+  m_RenderIMGUI: 0
+  m_MaximizeOnPlay: 0
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -1220,11 +1496,14 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     m_HBaseRangeMin: -766
     m_HBaseRangeMax: 766
     m_VBaseRangeMin: -395
     m_VBaseRangeMax: 395
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     m_HBaseRangeMin: -575
     m_HBaseRangeMax: 575
@@ -1243,7 +1522,16 @@ MonoBehaviour:
     m_VBaseRangeMax: 384.5
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    m_HBaseRangeMin: -766
+    m_HBaseRangeMax: 766
+    m_VBaseRangeMin: -395
+    m_VBaseRangeMax: 395
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1261,12 +1549,15 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
       y: 0
       width: 1532
       height: 790
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 766, y: 395}
 =======
+>>>>>>> JamesBranch
       y: 21
 <<<<<<< Updated upstream
       width: 1150
@@ -1286,7 +1577,17 @@ MonoBehaviour:
     m_Translation: {x: 766, y: 384.5}
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+      y: 0
+      width: 1532
+      height: 790
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 766, y: 395}
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1294,11 +1595,14 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
       x: -766
       y: -395
       width: 1532
       height: 790
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
       x: -575
       y: -277.5
@@ -1318,7 +1622,16 @@ MonoBehaviour:
       y: -499
       width: 1920
       height: 998
+<<<<<<< HEAD
+=======
+      x: -766
+      y: -395
+      width: 1532
+      height: 790
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1532, y: 790}
@@ -1328,14 +1641,23 @@ MonoBehaviour:
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 --- !u!114 &17
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
 --- !u!114 &20
 =======
 --- !u!114 &17
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+--- !u!114 &17
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1356,11 +1678,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     x: 2249
     y: 726.5
     width: 920
     height: 250
 =======
+>>>>>>> JamesBranch
 <<<<<<< Updated upstream
     x: 0
     y: 670
@@ -1379,6 +1704,15 @@ MonoBehaviour:
     height: 358
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    x: 2249
+    y: 726.5
+    width: 920
+    height: 250
+>>>>>>> JamesBranch
+=======
 >>>>>>> ZachBranch
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
 
