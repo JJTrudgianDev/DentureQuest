@@ -2,7 +2,6 @@
     "m_Name": "Settings",
     "m_Path": "ProjectSettings/Packages/com.unity.probuilder/Settings.json",
     "m_Dictionary": {
-<<<<<<< Updated upstream
         "m_DictionaryValues": [
             {
                 "type": "UnityEngine.ProBuilder.LogLevel, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -40,8 +39,5 @@
                 "value": "{\"m_Value\":true}"
             }
         ]
-=======
-        "m_DictionaryValues": []
->>>>>>> Stashed changes
     }
 }

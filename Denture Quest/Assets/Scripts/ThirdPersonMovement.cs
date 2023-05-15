@@ -29,6 +29,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private bool denturesPickedUp = false;
 
+    private RaycastHit hitInfo; // Added variable for raycast hit detection
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -90,6 +92,29 @@ public class ThirdPersonMovement : MonoBehaviour
 
         // Apply the velocity to the character controller
         controller.Move(velocity * Time.deltaTime);
+
+        // Raycast to detect dentures
+        if (Physics.Raycast(thirdPersonCamera.transform.position, thirdPersonCamera.transform.forward, out hitInfo, 3f))
+        {
+            // Check if the raycast hits an object tagged with "Dentures" and the dentures haven't been picked up yet
+            if (hitInfo.collider.CompareTag("Dentures") && !denturesPickedUp)
+            {
+                //            // Show a prompt to pick up dentures, e.g., display a message on the screen
+
+                // Check if the player presses the "F" key
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    // Set the dentures as picked up
+                    denturesPickedUp = true;
+
+                    // Teleport the dentures to the specified position above the player
+                    hitInfo.collider.transform.position = denturesTeleportPosition.position;
+
+                    // Set the player as the parent of the dentures
+                    hitInfo.collider.transform.parent = player;
+                }
+            }
+        }
     }
 
     private bool CanUncrouch()
@@ -134,27 +159,4 @@ public class ThirdPersonMovement : MonoBehaviour
         controller.height = targetHeight;
         controller.radius = targetRadius; // added
     }
-
-    // Teleport Denture Object
-    private void OnTriggerStay(Collider other)
-    {
-        // Check if the collided object is tagged with "Dentures" and the dentures haven't been picked up yet
-        if (other.gameObject.CompareTag("Dentures") && !denturesPickedUp)
-        {
-            // Check if the player presses the "F" key
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                // Set the dentures as picked up
-                denturesPickedUp = true;
-
-                // Teleport the dentures to the specified position above the player
-                other.transform.position = denturesTeleportPosition.position;
-
-                // Set the player as the parent of the dentures
-                other.transform.parent = player;
-            }
-        }
-    }
-
 }
-
