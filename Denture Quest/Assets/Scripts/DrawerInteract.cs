@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using System.Collections;
 
@@ -10,14 +9,15 @@ public class DrawerInteract : MonoBehaviour
     [SerializeField] private float detectionRange = 5f;
     [SerializeField] private Transform emptyObject;
     [SerializeField] private string cameraName = "Cam";
-    [SerializeField] private GameObject targetObjectToEnableTrigger; // Add this field
+    [SerializeField] private bool isInteractable = true;
+
 
     private Vector3 initialPosition;
     private Coroutine moveCoroutine;
     private bool isLookingAtObject;
     private bool isObjectMoved;
     private Camera raycastCamera;
-    private bool isInteractable = true;
+  
 
     private void Awake()
     {
@@ -60,13 +60,13 @@ public class DrawerInteract : MonoBehaviour
 
         if (canMoveObject && !isObjectMoved)
         {
-            isInteractable = false;
+            
             moveCoroutine = StartCoroutine(MoveObject(objectToMove.transform, emptyObject.position, emptyObject.rotation, transitionTime));
             isObjectMoved = true;
         }
         else if (canMoveObject && isObjectMoved)
         {
-            isInteractable = false;
+            
             moveCoroutine = StartCoroutine(MoveObject(objectToMove.transform, startPosition.position, startPosition.rotation, transitionTime));
             isObjectMoved = false;
         }
@@ -92,8 +92,13 @@ public class DrawerInteract : MonoBehaviour
         }
     }
 
-    private IEnumerator MoveObject(Transform objectTransform, Vector3 targetPosition, Quaternion targetRotation, float duration)
+    public IEnumerator MoveObject(Transform objectTransform, Vector3 targetPosition, Quaternion targetRotation, float duration)
     {
+        if (!isInteractable)
+        {
+            yield break;
+        }
+
         float elapsedTime = 0f;
         Vector3 startPosition = objectTransform.position;
         Quaternion startRotation = objectTransform.rotation;
@@ -109,33 +114,15 @@ public class DrawerInteract : MonoBehaviour
         objectTransform.position = targetPosition;
         objectTransform.rotation = targetRotation;
 
-        if (targetPosition == emptyObject.position)
-        {
-            // Object has reached empty object position
-            if (targetObjectToEnableTrigger != null)
-            {
-                Collider targetCollider = targetObjectToEnableTrigger.GetComponent<Collider>();
-                if (targetCollider != null)
-                {
-                    targetCollider.isTrigger = true;
-                }
-                else
-                {
-                    Debug.LogWarning("No Collider component found on the target object.");
-                }
-            }
-            else
-            {
-                Debug.LogWarning("Target object to enable trigger is not set.");
-            }
-        }
-        else
-        {
-            // Object has reached start position
-            // Do something else
-        }
+    }
 
+    public void EnableMoveObject()
+    {
         isInteractable = true;
-        moveCoroutine = null;
+    }
+  
+    public void DisableMoveObject()
+    {
+        isInteractable = false;
     }
 }

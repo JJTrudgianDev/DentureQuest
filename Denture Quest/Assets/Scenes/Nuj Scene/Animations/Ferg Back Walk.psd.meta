@@ -215,6 +215,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ferg Back Walk_3
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 138
+        width: 111
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d1446f5b3f4b243aa33e1e32168a9d
+      internalID: 230600902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -227,6 +248,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Ferg Back Walk_2: 565372820
+      Ferg Back Walk_3: 230600902
       Ferg Back Walk_1: -1399999859
       Ferg Back Walk_0: 1709456197
   spritePackingTag: 
