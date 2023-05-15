@@ -39,7 +39,8 @@ public class EnemyAI : MonoBehaviour
         agent.speed = movementSpeed;
         SelectRandomPoint();
         player = GameObject.FindGameObjectWithTag("Player");
-        animator.SetFloat("Speed", movementSpeed);
+
+
 
 
     }
@@ -48,6 +49,8 @@ public class EnemyAI : MonoBehaviour
     {
         UpdateActivity();
         UpdateDetection();
+        animator.SetFloat("Speed", movementSpeed);
+
         if (!playerInRange) // Only face the destination if the player is not in range
         {
             FaceDestination();
@@ -175,6 +178,8 @@ public class EnemyAI : MonoBehaviour
     {
         performingActivity = false;
         timer = 0f;
+        movementSpeed = 3.5f;
+
         SelectRandomPoint();
     }
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3434302046473209782}
   - component: {fileID: 598381483991643004}
   - component: {fileID: 2273321018596278985}
-  - component: {fileID: 2273321018596278984}
+  - component: {fileID: 1587130437}
   m_Layer: 0
   m_Name: Dentures
   m_TagString: Dentures
@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390799445784892073}
-  m_LocalRotation: {x: -0, y: -0.61379164, z: -0, w: 0.7894681}
+  m_LocalRotation: {x: 0, y: -0.6137892, z: 0, w: 0.78947}
   m_LocalPosition: {x: 0.079, y: 1.21, z: 4.015}
-  m_LocalScale: {x: 27.134626, y: 27.134626, z: 27.134626}
+  m_LocalScale: {x: 13.567312, y: 13.567313, z: 13.567312}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,16 +102,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &2273321018596278984
-SphereCollider:
+--- !u!64 &1587130437
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390799445784892073}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.032607652
-  m_Center: {x: -0.01169271, y: -0.010260061, z: 2.0070196e-11}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5862285047681851281, guid: 8ebefb7720f75e346b24eedd19961db3, type: 3}

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ferg Angry Back
+  m_Name: Ferg Back
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 1709456197, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
-    - time: 0.33333334
+    - time: 0.5
       value: {fileID: -1399999859, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
-    - time: 0.6666667
+    - time: 1
       value: {fileID: 565372820, guid: bf8695664d0bd7b4bbcee1e383568c50, type: 3}
     attribute: m_Sprite
     path: 
@@ -52,7 +52,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 1.0833334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
