@@ -364,7 +364,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: fb7a7b91a32cbe84dbc4554a5e5e7d1c, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6dfafb84caba1c54bb92b9c773d12622, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3948,7 +3948,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2f766abbf6b1ebb4783e22439ace9c10, type: 2}
+      objectReference: {fileID: 2100000, guid: 5544bc009d088ed419918e274c8ed88a, type: 2}
     - target: {fileID: 919132149155446097, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Name
       value: LockOne
@@ -4781,6 +4781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyOne
       objectReference: {fileID: 0}
+    - target: {fileID: 2683828258700131782, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5544bc009d088ed419918e274c8ed88a, type: 2}
     - target: {fileID: 2683828258700131784, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5404,7 +5408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 28ae1d07c87438e4b8768b8bd01d6471, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5428,7 +5432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -100, y: 100}
+  m_AnchoredPosition: {x: -100, y: 218.25}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1619338704529413532
