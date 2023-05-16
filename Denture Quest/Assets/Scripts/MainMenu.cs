@@ -3,34 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.XR.WSA;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
-    public TextMeshProUGUI AcceptInvitation;
-    public TextMeshProUGUI Play;
+    public GameObject AcceptInvitation;
+    public GameObject Play;
 
-    public TextMeshProUGUI SeeDetails;
-    public TextMeshProUGUI Options;
+    public GameObject SeeDetails;
+    public GameObject Options;
 
-    public TextMeshProUGUI DeclineInvitation;
-    public TextMeshProUGUI Quit;
+    public GameObject DeclineInvitation;
+    public GameObject Quit;
 
-    public TextMeshProUGUI HearingAids;
-    public TextMeshProUGUI Volume;
+    public GameObject HearingAids;
+    public GameObject Volume;
 
-    public TextMeshProUGUI Glasses;
-    public TextMeshProUGUI NativeResolution;
+    public GameObject Glasses;
+    public GameObject NativeResolution;
 
-    public TextMeshProUGUI Parkinsons;
-    public TextMeshProUGUI Sensitivity;
+    public GameObject Parkinsons;
+    public GameObject Sensitivity;
 
     public GameObject MainMenuPanel;
     public GameObject OptionsPanel;
 
+
+
+
     void Start()
     {
-        Play.enabled = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Play.SetActive(false);
+        Options.SetActive(false);
+        Quit.SetActive(false);
+      
+        StartCoroutine(toggleMouse());
     }
+
+    public IEnumerator toggleMouse()
+    {
+        Debug.Log("start");
+        yield return new WaitForSeconds(2f);
+        Debug.Log("gksdf");
+        Cursor.lockState = CursorLockMode.None;
+        yield return null;
+
+    }
+
     public void DoMap()
     {
         SceneManager.LoadScene("map");
@@ -38,74 +60,75 @@ public class MainMenu : MonoBehaviour
 
     public void PlayPointerEnter() 
     {
-        AcceptInvitation.enabled = false;
-        Play.enabled = true;
+        AcceptInvitation.SetActive(false);
+        Play.SetActive(true);
+
     }
 
     public void PlayPointerExit()
     {
-        AcceptInvitation.enabled = true;
-        Play.enabled = false;
+        AcceptInvitation.SetActive(true);
+        Play.SetActive(false);
     }
 
     public void OptionsPointerEnter()
     {
-        SeeDetails.enabled = false;
-        Options.enabled = true;
+        SeeDetails.SetActive(false);
+        Options.SetActive(true);
     }
 
     public void OptionsPointerExit()
     {
-        Options.enabled = false;
-        SeeDetails.enabled = true;
+        Options.SetActive(false);
+        SeeDetails.SetActive(true);
     }
 
     public void QuitPointerEnter()
     {
-        Quit.enabled = true;
-        DeclineInvitation.enabled = false;
+        Quit.SetActive(true);
+        DeclineInvitation.SetActive(false);
     }
 
     public void QuitPointerExit()
     {
-        DeclineInvitation.enabled = true;
-        Quit.enabled = false;
+        DeclineInvitation.SetActive(true);
+        Quit.SetActive(false);
     }
 
     public void VolumePointerEnter()
     {
-        Volume.enabled = true;
-        HearingAids.enabled = false;
+        Volume.SetActive(true);
+        HearingAids.SetActive(false);
     }
 
     public void VolumePointerExit()
     {
-        HearingAids.enabled = true;
-        Volume.enabled = false;
+        HearingAids.SetActive(true);
+        Volume.SetActive(false);
     }
 
     public void ResPointerEnter()
     {
-       NativeResolution.enabled = true;
-       Glasses.enabled = false;
+       NativeResolution.SetActive(true);
+       Glasses.SetActive(false);
     }
 
     public void ResPointerExit()
     {
-        Glasses.enabled = true;
-        NativeResolution.enabled = false;
+        Glasses.SetActive(true);
+        NativeResolution.SetActive(false);
     }
 
     public void SensPointerEnter()
     {
-        Sensitivity.enabled = true;
-        Parkinsons.enabled = false;
+        Sensitivity.SetActive(true);
+        Parkinsons.SetActive(false);
     }
 
     public void SensPointerExit()
     {
-        Parkinsons.enabled = true;
-        Sensitivity.enabled = false;
+        Parkinsons.SetActive(true);
+        Sensitivity.SetActive(false);
     }
 
     public void DoQuitGame()
@@ -124,4 +147,5 @@ public class MainMenu : MonoBehaviour
         MainMenuPanel.SetActive (true);
         OptionsPanel.SetActive (false);
     }
+
 }
