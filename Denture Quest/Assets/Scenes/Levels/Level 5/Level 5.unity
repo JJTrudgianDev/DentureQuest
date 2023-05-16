@@ -4818,7 +4818,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7374a5eaaea5f6e449ae5e2bbce74e8f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b6538a86db534b048a3e4ffe1b9e8374, type: 2}
+      objectReference: {fileID: 2100000, guid: 7011e6be5cb2cca42b855d611368c19c, type: 2}
     - target: {fileID: 919132149155446097, guid: 7374a5eaaea5f6e449ae5e2bbce74e8f, type: 3}
       propertyPath: m_Name
       value: Rug
