@@ -213,7 +213,26 @@ MonoBehaviour:
   detectionRange: 5
   emptyObject: {fileID: 5031426753360603553}
   cameraName: Cam
-  targetObjectToEnableTrigger: {fileID: 0}
+  isInteractable: 1
+--- !u!1 &4863931317597805065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9064580445387841656, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
+  m_PrefabInstance: {fileID: 4734413365389297025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7677259244352771448
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863931317597805065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9118882292277625795, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}
 --- !u!4 &5061688237523296874 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bfd59b71b8ab4c6408479ecac9653f00, type: 3}

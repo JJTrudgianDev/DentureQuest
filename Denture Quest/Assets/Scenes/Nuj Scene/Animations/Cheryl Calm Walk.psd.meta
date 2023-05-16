@@ -198,7 +198,7 @@ TextureImporter:
       name: Cheryl Calm Walk_2
       rect:
         serializedVersion: 2
-        x: 705
+        x: 706
         y: 138
         width: 90
         height: 213
@@ -211,6 +211,27 @@ TextureImporter:
       bones: []
       spriteID: c15fc1ac4093f3e4aaab988b91a64cd7
       internalID: 1805573219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cheryl Calm Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 137
+        width: 90
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8479cab9dc890064bb786edbdfd9bf37
+      internalID: 428652719
       vertices: []
       indices: 
       edges: []
@@ -228,6 +249,7 @@ TextureImporter:
     nameFileIdTable:
       Cheryl Calm Walk_1: 251560218
       Cheryl Calm Walk_0: 881335380
+      Cheryl Calm Walk_3: 428652719
       Cheryl Calm Walk_2: 1805573219
   spritePackingTag: 
   pSDRemoveMatte: 0

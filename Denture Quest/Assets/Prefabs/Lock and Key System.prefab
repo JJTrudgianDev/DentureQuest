@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c5064add2d476f1419c146bda1bad33a, type: 3}
+  m_Texture: {fileID: 2800000, guid: 28ae1d07c87438e4b8768b8bd01d6471, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: fb7a7b91a32cbe84dbc4554a5e5e7d1c, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6dfafb84caba1c54bb92b9c773d12622, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: a69ac95f0000c044a9abb05ec0b5ca6e, type: 3}
+  m_Texture: {fileID: 2800000, guid: f32231b9410811e489119d0840961b21, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ab6f828785510de41b236c3aa5302c45, type: 3}
+  m_Texture: {fileID: 2800000, guid: e5e4617891626cb498a4395046172155, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -624,6 +624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyOne
       objectReference: {fileID: 0}
+    - target: {fileID: 2683828258700131782, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5544bc009d088ed419918e274c8ed88a, type: 2}
     - target: {fileID: 2683828258700131784, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -753,7 +757,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1b21d615a9bd1304bb0e0084e8e347ab, type: 2}
+      objectReference: {fileID: 2100000, guid: 8fad3462314948b4592d98cc501dd2e3, type: 2}
     - target: {fileID: 919132149155446097, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Name
       value: LockFour
@@ -981,7 +985,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2f766abbf6b1ebb4783e22439ace9c10, type: 2}
+      objectReference: {fileID: 2100000, guid: 5544bc009d088ed419918e274c8ed88a, type: 2}
     - target: {fileID: 919132149155446097, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Name
       value: LockOne
@@ -1043,7 +1047,7 @@ PrefabInstance:
     - target: {fileID: 2683828258700131782, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1b21d615a9bd1304bb0e0084e8e347ab, type: 2}
+      objectReference: {fileID: 2100000, guid: 8fad3462314948b4592d98cc501dd2e3, type: 2}
     - target: {fileID: 2683828258700131784, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1125,7 +1129,7 @@ PrefabInstance:
     - target: {fileID: 2683828258700131782, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d5b48fe9f5a8c0045b38fd64cea0b133, type: 2}
+      objectReference: {fileID: 2100000, guid: 1d6060bfe16e9fc48901731e2e34aa0d, type: 2}
     - target: {fileID: 2683828258700131784, guid: 40670c1f3fb74a94eaefec165af8a32e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1341,7 +1345,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d5b48fe9f5a8c0045b38fd64cea0b133, type: 2}
+      objectReference: {fileID: 2100000, guid: 1d6060bfe16e9fc48901731e2e34aa0d, type: 2}
     - target: {fileID: 919132149155446097, guid: 8271667933688d14ea3e5d598ea6c641, type: 3}
       propertyPath: m_Name
       value: LockThree
