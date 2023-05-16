@@ -58,6 +58,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("map");
     }
 
+    public void DoMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void PlayPointerEnter() 
     {
         AcceptInvitation.SetActive(false);
