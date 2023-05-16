@@ -157,9 +157,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 138
+        y: 186
         width: 111
-        height: 220
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,10 +177,10 @@ TextureImporter:
       name: Ferg Back Walk_1
       rect:
         serializedVersion: 2
-        x: 393
-        y: 138
-        width: 111
-        height: 220
+        x: 392
+        y: 185
+        width: 112
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +198,10 @@ TextureImporter:
       name: Ferg Back Walk_2
       rect:
         serializedVersion: 2
-        x: 694
-        y: 138
-        width: 111
-        height: 220
+        x: 695
+        y: 185
+        width: 112
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,9 +220,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 138
-        width: 111
-        height: 220
+        y: 185
+        width: 112
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
