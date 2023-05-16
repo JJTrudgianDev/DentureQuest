@@ -10,15 +10,26 @@ public class MapManager : MonoBehaviour
     public Pin[] Pins;
 	public Text SelectedLevelText;
 
-	int unlockedLevel = 1;
+	public DialogueManager_02 dialogueManager;
+    
+    public bool isGamePaused;
+    public bool isMouseLocked;
+
+
+    public int unlockedLevel = 1;
 	
 	/// <summary>
 	/// Use this for initialization
 	/// </summary>
 	private void Start()
 	{
+       
+            // Initialize the game pause and mouse lock flags from the DialogueManager
+           isGamePaused = dialogueManager.isGamePaused;
+           isMouseLocked = dialogueManager.isMouseLocked;
+        
 
-		if (!PlayerPrefs.HasKey("LevelUnlocked"))
+        if (!PlayerPrefs.HasKey("LevelUnlocked"))
 		{
 			PlayerPrefs.SetInt("LevelUnlocked", 1);
 		}
@@ -53,8 +64,15 @@ public class MapManager : MonoBehaviour
     /// </summary>
     private void Update()
 	{
-		// Only check input when character is stopped
-		if (Character.IsMoving) return;
+		// makes sure that the script knows whether the game is paused and the mouse is locked
+        isGamePaused = dialogueManager.isGamePaused;
+        isMouseLocked = dialogueManager.isMouseLocked;
+        // Only check input when the game is not paused and mouse movement is not locked
+        if (isGamePaused || isMouseLocked)
+            return;
+
+        // Only check input when character is stopped
+        if (Character.IsMoving) return;
 		
 		// First thing to do is try get the player input
 		CheckForInput();
