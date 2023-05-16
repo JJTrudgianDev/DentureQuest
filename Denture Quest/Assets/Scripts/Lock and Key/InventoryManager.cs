@@ -6,6 +6,7 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
 
+
     public Dictionary<string, RawImage> keyUIElements = new Dictionary<string, RawImage>(); // Dictionary of lock tags and corresponding UI elements
 
     private void Awake()

@@ -2883,8 +2883,8 @@ GameObject:
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1011551121
 Transform:
@@ -3717,6 +3717,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e6cc64ad71aaadc45beeaf931a46896c, type: 3}
       propertyPath: m_Name
       value: lamp01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6cc64ad71aaadc45beeaf931a46896c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6cc64ad71aaadc45beeaf931a46896c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6cc64ad71aaadc45beeaf931a46896c, type: 3}
@@ -8006,6 +8014,14 @@ PrefabInstance:
     - target: {fileID: 729885031964859584, guid: d9919c59504ccd5409bd86f43be13e2d, type: 3}
       propertyPath: m_Name
       value: Prefabs_TVCabinet_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452669240601415223, guid: d9919c59504ccd5409bd86f43be13e2d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452669240601415223, guid: d9919c59504ccd5409bd86f43be13e2d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8875969456347565378, guid: d9919c59504ccd5409bd86f43be13e2d, type: 3}
       propertyPath: m_IsActive
