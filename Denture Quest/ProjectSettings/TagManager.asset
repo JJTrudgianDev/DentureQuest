@@ -8,6 +8,7 @@ TagManager:
   - Exit
   - KeyOne
   - KeyTwo
+  - MainButtons
   layers:
   - Default
   - TransparentFX
