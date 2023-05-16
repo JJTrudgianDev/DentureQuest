@@ -15,10 +15,17 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< Updated upstream
     x: 2249
     y: 302.5
     width: 1206
     height: 715
+=======
+    x: 8
+    y: 51
+    width: 1904
+    height: 1021
+>>>>>>> Stashed changes
   m_ShowMode: 4
   m_Title:
   m_RootView: {fileID: 6}
@@ -44,12 +51,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< Updated upstream
     width: 1206
     height: 665
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 119
+=======
+    width: 1904
+    height: 971
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 59
+>>>>>>> Stashed changes
 --- !u!114 &3
 =======
   m_Name: 
@@ -81,16 +97,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   m_Name:
   m_EditorClassIdentifier:
 =======
   m_Name: SceneView
+=======
+  m_Name: LightingWindow
+>>>>>>> Stashed changes
   m_EditorClassIdentifier: 
 >>>>>>> JamesBranch
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< Updated upstream
     x: 548
     y: 0
 <<<<<<< HEAD
@@ -135,6 +156,21 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 4685
+=======
+    x: 1518
+    y: 0
+    width: 386
+    height: 971
+  m_MinSize: {x: 391, y: 411}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 13}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> Stashed changes
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,6 +188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     width: 228
     height: 394
@@ -159,6 +196,10 @@ MonoBehaviour:
     width: 385
     height: 347
 >>>>>>> JamesBranch
+=======
+    width: 376
+    height: 587
+>>>>>>> Stashed changes
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
@@ -184,10 +225,16 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     y: 394
     width: 921
     height: 271
+=======
+    y: 587
+    width: 1518
+    height: 384
+>>>>>>> Stashed changes
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
@@ -229,10 +276,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 383
     y: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1206
     height: 715
+=======
+    width: 1904
+    height: 1021
+>>>>>>> Stashed changes
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 =======
@@ -273,8 +325,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     width: 1206
+=======
+    width: 1904
+>>>>>>> Stashed changes
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -308,9 +364,14 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     y: 695
     width: 1206
+=======
+    y: 1001
+    width: 1904
+>>>>>>> Stashed changes
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -352,6 +413,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 385
     y: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 921
@@ -381,6 +443,14 @@ MonoBehaviour:
   m_Selected: 1
   m_LastSelected: 0
 >>>>>>> NujBranch
+=======
+    width: 1518
+    height: 971
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 124
+>>>>>>> Stashed changes
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -443,12 +513,21 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
     y: 0
+<<<<<<< Updated upstream
     width: 921
     height: 394
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 93
+=======
+    width: 1518
+    height: 587
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 125
+>>>>>>> Stashed changes
 --- !u!114 &11
 =======
     y: 30
@@ -479,11 +558,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< Updated upstream
     x: 1493
     y: 0
 <<<<<<< HEAD
     width: 693
     height: 394
+=======
+    x: 376
+    y: 0
+    width: 1142
+    height: 587
+>>>>>>> Stashed changes
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -641,6 +727,7 @@ MonoBehaviour:
   - {fileID: 16}
   m_Position:
     serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     x: 0
     y: 0
@@ -653,6 +740,17 @@ MonoBehaviour:
   m_UseBottomView: 1
   m_BottomViewHeight: 20
 --- !u!114 &15
+=======
+    x: 1526
+    y: 81
+    width: 385
+    height: 950
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &14
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1437,6 +1535,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     x: 2249
     y: 726.5
@@ -1448,6 +1547,12 @@ MonoBehaviour:
     width: 546
     height: 438
 >>>>>>> JamesBranch
+=======
+    x: 8
+    y: 668
+    width: 1517
+    height: 363
+>>>>>>> Stashed changes
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1465,12 +1570,17 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
     - Assets/Scripts/mP SCRIPTS
+=======
+    - Assets/Scenes/Levels
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   - Assets
   m_LastFoldersGridSize: -1
@@ -1488,16 +1598,26 @@ MonoBehaviour:
       m_OriginalName:
 =======
   - Assets/Scripts/mP SCRIPTS
+=======
+  - Assets/Scenes/Levels
+>>>>>>> Stashed changes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\s213603\Documents\GitHub\Gitkracken\DentureQuest\Denture
     Quest
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< Updated upstream
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: dc650000
     m_LastClickedID: 26076
     m_ExpandedIDs: 00000000ac650000ae650000b0650000b2650000b4650000b665000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 3}
+    m_SelectedIDs: da670000
+    m_LastClickedID: 26586
+    m_ExpandedIDs: 000000001c670000b0670000da67000000ca9a3bffffff7f
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1526,11 +1646,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_ExpandedIDs: 00000000f4350000
 =======
     m_ExpandedIDs: 00000000ac650000ae650000b0650000b2650000b4650000b6650000
 >>>>>>> JamesBranch
+=======
+    m_ExpandedIDs: 000000001c670000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1659,6 +1783,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     x: 2249
     y: 332.5
@@ -1670,6 +1795,12 @@ MonoBehaviour:
     width: 384
     height: 326
 >>>>>>> JamesBranch
+=======
+    x: 8
+    y: 81
+    width: 375
+    height: 566
+>>>>>>> Stashed changes
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1677,6 +1808,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       m_SelectedIDs:
       m_LastClickedID: 0
@@ -1686,6 +1818,11 @@ MonoBehaviour:
       m_LastClickedID: 38392
       m_ExpandedIDs: 58aefeff945affffbabaffff3abcffff3cbcffff22bdffff24bdffff4cbdffff6abdffff8abdffff8cbdffff72beffff8ebfffff92dcffff16fbffff347300004a730000e4730000a6950000bc95000022960000e49600005c9700006097000078970000c0970000d4970000f6970000109800007ad0000020540100
 >>>>>>> JamesBranch
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 34fbffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1796,6 +1933,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 2477
@@ -1811,6 +1949,12 @@ MonoBehaviour:
     width: 723
     height: 467
 >>>>>>> JamesBranch
+=======
+    x: 384
+    y: 81
+    width: 1140
+    height: 566
+>>>>>>> Stashed changes
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2045,6 +2189,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
@@ -2060,6 +2205,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 4.50669, y: 0.7069781, z: -22.566193}
 >>>>>>> NujBranch
+=======
+    m_Target: {x: 4.2744336, y: 2.2414372, z: -12.231224}
+    speed: 2
+    m_Value: {x: 4.2744336, y: 2.2414372, z: -12.231224}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2106,6 +2256,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
@@ -2133,6 +2284,15 @@ MonoBehaviour:
     speed: 2
     m_Value: 10.151743
 >>>>>>> NujBranch
+=======
+    m_Target: {x: 0.018553758, y: 0.58827513, z: -0.013268089, w: 0.8084134}
+    speed: 2
+    m_Value: {x: 0.019765068, y: 0.5882192, z: -0.014149775, w: 0.8083361}
+  m_Size:
+    m_Target: 0.85761374
+    speed: 2
+    m_Value: 0.85761374
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 0
     speed: 2
