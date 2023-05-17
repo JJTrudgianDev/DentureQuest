@@ -13,6 +13,7 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-2:
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 5353040500565f025e5a5c7313270c4417164e7c2e7876677c281b67e0b6653b
       flags: 0
     RecentlyUsedSceneGuid-3:
@@ -21,6 +22,8 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-4:
       value: 0554000254075c0354080e7315735d44434f1b282e2a7164287d4862b7b43668
 =======
+=======
+>>>>>>> ElBranch
       value: 50540c0503575a5a5e080926447b0844444f49727f2e7f612c2b1967e0b4313b
       flags: 0
     RecentlyUsedSceneGuid-3:
@@ -40,6 +43,9 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 50530705060359580b5e5b73157508441715417d7c7971692b2a4d36bbb9616c
+<<<<<<< HEAD
+>>>>>>> ElBranch
+=======
 >>>>>>> ElBranch
       flags: 0
     vcSharedLogLevel:
