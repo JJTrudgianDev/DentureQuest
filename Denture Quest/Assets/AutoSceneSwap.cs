@@ -8,15 +8,20 @@ public class AutoSceneSwap : MonoBehaviour
 
     public float timeToChange;
     public string sceneName;
+    public string mainMenu;
 
     private void Start()
     {
-        Invoke("LoadMap", timeToChange);
+        //Invoke("LoadMap", timeToChange);
     }
 
-    void LoadMap()
+    public void LoadMap()
     {
         SceneManager.LoadScene(sceneName);
     }
 
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(mainMenu);
+    }
 }
