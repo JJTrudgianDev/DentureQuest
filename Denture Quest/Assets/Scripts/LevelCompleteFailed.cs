@@ -18,6 +18,9 @@ public class LevelCompleteFailed : MonoBehaviour
     {
         MenuButton02.SetActive(false);
         ContinueButton02.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void MenuPointerEnter()

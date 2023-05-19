@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
 using UnityEngine.SceneManagement;
 
 public class MapManager : MonoBehaviour
@@ -130,7 +129,7 @@ public class MapManager : MonoBehaviour
 	public void UpdateGui()
 	{
         // Check if dialogue is active
-        if (dialogueManager.dialogueActive)
+        if (isDialogueActive == true)
         {
             // Disable all text elements
             for (int i = 0; i < pinTexts.Length; i++)
@@ -143,8 +142,8 @@ public class MapManager : MonoBehaviour
         // Iterate through all pinTexts
         for (int i = 0; i < pinTexts.Length; i++)
         {
-            // Check if the current pin matches or the next pin is unlocked
-            if (Character.CurrentPin == Pins[i] || (i + 1 < Pins.Length && Pins[i + 1].isUnlocked))
+            // Check if the current pin matches and the next pin is unlocked
+            if (Character.CurrentPin == Pins[i] && (i + 1 < Pins.Length && Pins[i + 1].isUnlocked))
             {
                 pinTexts[i].gameObject.SetActive(true);
             }
