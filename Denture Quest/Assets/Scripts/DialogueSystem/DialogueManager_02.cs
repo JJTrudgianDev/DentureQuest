@@ -8,7 +8,7 @@ public class DialogueManager_02 : MonoBehaviour
     public TextMeshProUGUI textObject;
     private string[] dialogueLines;
     private int currentLineIndex = 0;
-    private bool dialogueActive = false;
+    public bool dialogueActive = false;
 
     public bool isGamePaused;
     public bool isMouseLocked;
