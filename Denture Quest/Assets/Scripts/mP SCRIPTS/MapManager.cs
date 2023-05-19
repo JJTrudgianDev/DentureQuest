@@ -16,6 +16,9 @@ public class MapManager : MonoBehaviour
 
     public GameObject[] pinTexts; // Array of UI text elements representing pins
     private bool isDialogueActive = false;
+    private bool isMoving = false;
+
+    public GameObject eToEnter;
 
     public int unlockedLevel = 1;
 
@@ -67,6 +70,11 @@ public class MapManager : MonoBehaviour
     {
         // Update the dialogue state
         CheckDialogueState();
+
+        //enable or disable e to enter
+        EToEnter();
+
+        UpdateGui();
 
         // makes sure that the script knows whether the game is paused and the mouse is locked
         isGamePaused = dialogueManager.isGamePaused;
@@ -120,7 +128,21 @@ public class MapManager : MonoBehaviour
 
     private void CheckDialogueState()
     {
-        isDialogueActive = dialogueManager.dialogueActive; 
+        isDialogueActive = dialogueManager.dialogueActive;
+
+        isMoving = Character.IsMoving;
+    }
+
+    private void EToEnter()
+    {
+        if(isDialogueActive == true || isMoving == true)
+        {
+            eToEnter.gameObject.SetActive(false);
+        }
+        else
+        {
+            eToEnter.gameObject.SetActive(true);
+        }
     }
 	
 	/// <summary>
@@ -142,8 +164,9 @@ public class MapManager : MonoBehaviour
         // Iterate through all pinTexts
         for (int i = 0; i < pinTexts.Length; i++)
         {
-            // Check if the current pin matches and the next pin is unlocked
-            if (Character.CurrentPin == Pins[i] && (i + 1 < Pins.Length && Pins[i + 1].isUnlocked))
+            
+            // Check if the current pin matches and the next pin is unlocked and dialogue is closed and the player is not moving
+            if (Character.CurrentPin == Pins[i] && (i + 1 < Pins.Length && Pins[i + 1].isUnlocked) && isDialogueActive == false && isMoving == false)
             {
                 pinTexts[i].gameObject.SetActive(true);
             }
