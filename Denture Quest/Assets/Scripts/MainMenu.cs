@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
     public GameObject DeclineInvitation;
     public GameObject Quit;
 
+    public GameObject Back01;
+    public GameObject Back02;
+
+    /* settings
     public GameObject HearingAids;
     public GameObject Volume;
 
@@ -26,6 +30,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject Parkinsons;
     public GameObject Sensitivity;
+    */
 
     public GameObject MainMenuPanel;
     public GameObject OptionsPanel;
@@ -56,6 +61,11 @@ public class MainMenu : MonoBehaviour
     public void DoMap()
     {
         SceneManager.LoadScene("map");
+    }
+
+    public void DoMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void PlayPointerEnter() 
@@ -95,6 +105,9 @@ public class MainMenu : MonoBehaviour
         Quit.SetActive(false);
     }
 
+    /*
+      //All for settings. unneeded 
+
     public void VolumePointerEnter()
     {
         Volume.SetActive(true);
@@ -131,6 +144,20 @@ public class MainMenu : MonoBehaviour
         Sensitivity.SetActive(false);
     }
 
+    */
+
+    public void BackPointerEnter()
+    {
+        Back01.SetActive(false);
+        Back02.SetActive(true);
+    }
+
+    public void BackPointerExit()
+    {
+        Back01.SetActive(true);
+        Back02.SetActive(false);
+    }
+
     public void DoQuitGame()
     {
         Application.Quit();
@@ -140,6 +167,7 @@ public class MainMenu : MonoBehaviour
     {
         MainMenuPanel.SetActive (false);
         OptionsPanel.SetActive (true);
+        Back02.SetActive(false);
     }
 
     public void GoBack()

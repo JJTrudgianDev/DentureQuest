@@ -3,8 +3,9 @@
 --- !u!114 &1
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -15,10 +16,11 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< Updated upstream
     x: 0
-    y: 45
+    y: 43
     width: 2560
-    height: 1391
+    height: 1357
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: 
 =======
     x: 1920
@@ -28,18 +30,26 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Scene
 >>>>>>> Stashed changes
+=======
+  m_Title: Scene
+>>>>>>> JamesBranch
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   m_Maximized: 1
 >>>>>>> Stashed changes
+=======
+  m_Maximized: 1
+>>>>>>> JamesBranch
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -55,10 +65,11 @@ MonoBehaviour:
     y: 30
 <<<<<<< Updated upstream
     width: 2560
-    height: 1341
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+    height: 1307
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 615
 =======
     width: 1920
@@ -68,11 +79,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 205
 >>>>>>> Stashed changes
+=======
+  controlID: 115
+>>>>>>> JamesBranch
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -86,16 +101,20 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     x: 2041
+=======
+    x: 1955
+>>>>>>> JamesBranch
     y: 0
-    width: 519
-    height: 1341
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+    width: 605
+    height: 1307
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
 =======
@@ -116,8 +135,9 @@ MonoBehaviour:
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -129,6 +149,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 505
     height: 811
@@ -146,27 +167,42 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 16}
 >>>>>>> Stashed changes
+=======
+    width: 484
+    height: 774
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+>>>>>>> JamesBranch
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Name: 
 =======
   m_Name: ProjectBrowser
 >>>>>>> Stashed changes
+=======
+  m_Name: ProjectBrowser
+>>>>>>> JamesBranch
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     y: 811
     width: 2041
@@ -174,10 +210,19 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
+=======
+    y: 774
+    width: 1955
+    height: 533
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 12}
+>>>>>>> JamesBranch
   m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
+  - {fileID: 12}
+  - {fileID: 17}
   m_Selected: 0
+<<<<<<< HEAD
   m_LastSelected: 0
 =======
     y: 604
@@ -192,11 +237,15 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 >>>>>>> Stashed changes
+=======
+  m_LastSelected: 1
+>>>>>>> JamesBranch
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -213,24 +262,31 @@ MonoBehaviour:
     y: 0
 <<<<<<< Updated upstream
     width: 2560
-    height: 1391
-  m_MinSize: {x: 950, y: 300}
+    height: 1357
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
+<<<<<<< HEAD
 =======
     width: 1920
     height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
+=======
+>>>>>>> JamesBranch
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -250,12 +306,13 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Default
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -266,8 +323,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     y: 1371
+=======
+    y: 1337
+>>>>>>> JamesBranch
     width: 2560
 =======
     y: 977
@@ -279,8 +340,9 @@ MonoBehaviour:
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -294,16 +356,24 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 2041
     height: 1341
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
+=======
+    width: 1955
+    height: 1307
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+>>>>>>> JamesBranch
   vertical: 1
-  controlID: 547
+  controlID: 116
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
+<<<<<<< HEAD
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 =======
@@ -320,6 +390,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> Stashed changes
+=======
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> JamesBranch
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -333,6 +408,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 2041
     height: 811
@@ -348,34 +424,53 @@ MonoBehaviour:
   vertical: 0
   controlID: 207
 >>>>>>> Stashed changes
+=======
+    width: 1955
+    height: 774
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 117
+>>>>>>> JamesBranch
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Name: 
 =======
   m_Name: SceneView
 >>>>>>> Stashed changes
+=======
+  m_Name: SceneView
+>>>>>>> JamesBranch
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     x: 505
+=======
+    x: 484
+>>>>>>> JamesBranch
     y: 0
-    width: 1536
-    height: 811
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 16}
+    width: 1471
+    height: 774
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
   m_Panes:
+  - {fileID: 15}
   - {fileID: 16}
+<<<<<<< HEAD
   - {fileID: 17}
   - {fileID: 12}
 =======
@@ -390,11 +485,14 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
 >>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -521,28 +619,35 @@ MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+=======
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> JamesBranch
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_AutoRepaintOnSceneChange: 0
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
-  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
 <<<<<<< Updated upstream
     x: 0
+<<<<<<< HEAD
     y: 905
     width: 2039
     height: 509
@@ -551,33 +656,51 @@ MonoBehaviour:
     y: 677
     width: 1473
     height: 322
+=======
+    y: 847
+    width: 1954
+    height: 512
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
+    m_SoftLockControlStates: []
     m_ReferencingInstanceIDs: 
-    m_ScenePaths: []
+    m_SceneHandles: 
     m_ShowAllHits: 0
-    m_SearchArea: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     - Assets
+=======
+    - Assets/Art/FlatCharacters
+    m_Globs: []
+    m_OriginalText: 
+>>>>>>> JamesBranch
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Art/FlatCharacters
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/danielbrauer/Unity Projects/New Unity Project 20
-  m_IsLocked: 0
+  m_LastProjectPath: D:\School\DQRepo\DentureQuest\Denture Quest
+  m_LockTracker:
+    m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
     m_ExpandedIDs: 00000000b023000000ca9a3bffffff7f
@@ -600,6 +723,11 @@ MonoBehaviour:
     m_LastClickedID: 27534
     m_ExpandedIDs: 000000008a6b00008c6b00008e6b0000906b0000926b0000946b00009c6b00002e6f0000306f000000ca9a3bffffff7f
 >>>>>>> Stashed changes
+=======
+    m_SelectedIDs: a28a0000
+    m_LastClickedID: 35490
+    m_ExpandedIDs: 00000000e8730000ea730000ec730000ee730000f0730000f67300000a74000000ca9a3b
+>>>>>>> JamesBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -616,23 +744,26 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
       m_Path: 
       m_Icon: {fileID: 0}
       m_ResourceFile: 
-    m_SearchString: 
-    m_ColumnWidths: []
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_ExpandedIDs: 00000000b023000000ca9a3bffffff7f
 =======
     m_ExpandedIDs: 000000008a6b00008c6b00008e6b0000906b0000926b0000946b000000ca9a3bffffff7f
 >>>>>>> Stashed changes
+=======
+    m_ExpandedIDs: 00000000e8730000ea730000ec730000ee730000f0730000
+>>>>>>> JamesBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -649,18 +780,17 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
       m_Path: 
       m_Icon: {fileID: 0}
       m_ResourceFile: 
-    m_SearchString: 
-    m_ColumnWidths: []
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -677,11 +807,15 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       m_ClientGUIView: {fileID: 0}
 =======
       m_ClientGUIView: {fileID: 5}
 >>>>>>> Stashed changes
+=======
+      m_ClientGUIView: {fileID: 5}
+>>>>>>> JamesBranch
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -691,70 +825,87 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_DirectoriesAreaWidth: 115
 --- !u!114 &14
+=======
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 207
+--- !u!114 &13
+>>>>>>> JamesBranch
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
-  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 2043
-    y: 94
-    width: 517
-    height: 1320
-  m_ScrollPosition: {x: 0, y: 0}
-  m_InspectorMode: 0
+    x: 1955
+    y: 73
+    width: 604
+    height: 1286
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &15
 =======
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &16
 >>>>>>> Stashed changes
+=======
+--- !u!114 &14
+>>>>>>> JamesBranch
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
-  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
 <<<<<<< Updated upstream
     x: 0
+<<<<<<< HEAD
     y: 94
     width: 503
     height: 790
@@ -797,6 +948,11 @@ MonoBehaviour:
     y: 73
     width: 362
     height: 583
+=======
+    y: 73
+    width: 483
+    height: 753
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -806,7 +962,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 7453f7ff9062f7ff6269f7ffca72f7ff9679f7ff4483f7ffe4a6f7fffab1f7ff88c1f7ff78ccf7fff0d9f7ff50daf7ff0ae1f7ffc4e9f7ffb0eff7ff1e24f8ffa639f8ffc039f8ffda39f8fff439f8ff2a3af8ff1c3cf8ff2e48f8ff9889f8ff3692f8ffd29ef8ff80a6f8ffea5ef9ff505ff9ff5c60f9ffc060f9ff3663f9ff0c64f9ff2664f9ff4064f9ff7a64f9ffd264f9ff0c98f9ffdc9af9ff069df9ff429df9ff409ef9fff09ef9ffb8a3f9ffecacf9ff3eb9f9ff6ac1f9ffd4dcf9ff8ee5f9ffc4eef9ff1cf2f9ff7413faffc613faffcc13faff0e14faff4414faffa61cfaff5430faff6e39faff1a43fafff857faff6660faffc470faff8e71faff807afaff0683faffaa8efaff3698faff6aa6faffd0aefaff94bafaff08c8faff12cdfaff94d3faffb4dffaff66e8faff1eeefaff1ef6faffda1afbff2a24fbff2c3ffbff5449fbff444bfbff7e53fbff7c63fbffb26dfbff5276fbffb080fbff9488fbff0089fbff468ffbff3897fbff9cb7fbff20c1fbff3ad5fbffecd5fbff2ce5fbff66e5fbffbee5fbffe8f4fbffd809fcfff812fcff3a23fcffa02bfcff0841fcff324bfcff6e54fcff485bfcff4c60fcff526cfcffea73fcff3085fcffbe8cfcff1895fcffceaefcff30b7fcffc8c0fcffe8d7fcff6ee3fcffa8e3fcffd8e3fcff66ecfcff74fdfcffb0fefcff6004fdffd80cfdffdc0cfdff100efdff7813fdff78aefdffdaaefdffe8b1fdfff6b1fdffc0b2fdffc4b3fdfff4b3fdffbcbcfdff24c5fdfff6cffdffd4d7fdff74dcfdffcee3fdff8af0fdff0efdfdff84fdfdfff000feff2202feff5203feff9c0bfeff160efeff7212feffe013feff5619feffc421feff3223feff3028feffe22cfeff5630feffbe35feff6c3dfeffda3efeffa44ffeff5854feffcc57feff065cfeff745dfefff266feff0c6ffeff0275feffb685feff7c8bfeff90a8feffa0aefeffaed5fefff6dcfeff08e2feff2ef6feff1cfcfeff6605ffff780affff140bffffa80bffff820cffffc813ffff901bffff3c20ffff166cffff446dffff4c6dffff706dffffa672ffff7289ffff868fffffd2a0ffff94a5ffff98aaffff92b2ffff60edffffccf0ffff42fbffff62670000766700008c670000c8670000f267000026680000b86800003069000094690000a8690000f28300003e8400008284000030850000c2850000fc8500009a860000b68a0000ca8a00001e8b0000608d0000ac8d0000f08d0000a48e0000688f0000c28f0000049000001c9a0000689a0000229b0000da9b00002e9c000094b60000b2b900007eba000036bb00005ac300009ec3000056cd000022ce0000dace000002d0000032d0000054d000003cd100006ed1000060d20000aad2000018d300006ae3000002e4000096e50000a4e6000072e700008ae700009ae70000e0e7000044e8000048e800003af3000070f400003ef5000010f6000014f600008afa000056fb00000efc0000c6fd0000a8000100ac000100ea340100a4370100e637010034380100663a0100763a0100243b0100924a0100e84a0100484b010060590100b4590100e85901001c5a0100ae5a0100925c01006a5d0100d25e0100da5f0100626001009660010072620100c862010028630100567301008a730100d4780100888701004aa201005aa4010090c001000ac201006cc50100faeb010012020200b002020098070200d80702002208020058080200880802000e09020026090200720902003c110200da1102009a190200b0190200e6190200161a0200b41a02002a220200bc22020022230200c02302000c240200282e0200a42e0200422f0200903b0200f43b0200923c0200de3c020008460200a6460200fe460200ec4802000249020066490200044a0200c24a0200f64a0200ee4b0200404c0200c04f0200f44f020018520200ac520200d6520200dc5a0200d25b0200065d02008c5d02003a5e02001e5f0200245f0200d0a30200baa4020058af020098af020048b00200ceb0020002b80200fab8020098b902006ec10200d4c1020072c20200dcca02007acb020030d2020040d40200ccd702006ad8020054e002009ee0020004e10200a2e10200e8e10200eee1020004f60200b4f6020098f70200a4f70200be0a0300120c0300900c0300da0c0300de0d0300240e03000a1c0300661c03004655030036570300785903000e5a0300265a0300b85a0300025b0300145b0300225b0300027b0300b28103009a820300ba8303007c840300a48403002c85030052850300508f030038900300a4ae030066b103002ab2030036b203006ab20300b2b2030062ba03004abb0300
+=======
+      m_ExpandedIDs: ba07ffff940effff1c12ffff0417ffff4436ffff0e45ffff8692ffffc6abffff10acffff52acffff0ab0fffff4cdffff8ed1ffffa4d5ffffbad8ffff4cddffff127900001c790000567c00006a7c00001c7d000096890000aa8900005c8a0000768a0000129b0000c49b000040d500004ad5000050d500000ce0000020e00000dee8000012e9000028e90000
+>>>>>>> JamesBranch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -830,29 +990,32 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
+<<<<<<< HEAD
 --- !u!114 &17
 >>>>>>> Stashed changes
+=======
+--- !u!114 &15
+>>>>>>> JamesBranch
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 1
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
-  m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     x: 507
     y: 94
@@ -863,6 +1026,12 @@ MonoBehaviour:
     y: 73
     width: 1109
     height: 583
+=======
+    x: 484
+    y: 73
+    width: 1469
+    height: 753
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -873,8 +1042,13 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
+<<<<<<< HEAD
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
+=======
+      snapOffsetDelta: {x: -101, y: -26}
+      snapCorner: 3
+>>>>>>> JamesBranch
       id: Tool Settings
       index: 0
       layout: 1
@@ -883,9 +1057,15 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
       snapOffset: {x: 0, y: 149}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
+=======
+      snapOffset: {x: -141, y: 149}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+>>>>>>> JamesBranch
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -1091,13 +1271,17 @@ MonoBehaviour:
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch
   m_SceneLighting: 1
-  lastFramingTime: 0
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
+  m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
@@ -1107,27 +1291,58 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -5.922006, y: 4.7509823, z: -5.1427546}
 >>>>>>> Stashed changes
+=======
+    m_Target: {x: -21.343803, y: -10.997156, z: -5.0741844}
+    speed: 2
+    m_Value: {x: -21.343803, y: -10.997156, z: -5.0741844}
+>>>>>>> JamesBranch
   m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
   m_SceneViewState:
+    m_AlwaysRefresh: 0
     showFog: 1
-    showMaterialUpdate: 0
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
-  grid:
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
     xGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
     zGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
+      m_Fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 1
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
 =======
@@ -1143,15 +1358,31 @@ MonoBehaviour:
 =======
     m_Value: 0.8660259
 >>>>>>> Stashed changes
-  m_Ortho:
-    m_Target: 0
+=======
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 7.984745
+    speed: 2
+    m_Value: 7.984745
+>>>>>>> JamesBranch
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+<<<<<<< HEAD
     m_Value: 0
 <<<<<<< Updated upstream
 =======
   m_CameraSettings:
     m_Speed: 2
     m_SpeedNormalized: 1
+=======
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+>>>>>>> JamesBranch
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1162,39 +1393,47 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
+<<<<<<< HEAD
 >>>>>>> Stashed changes
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+=======
+  m_LastSceneViewRotation: {x: 0.013967332, y: 0.9858713, z: -0.10869536, w: 0.12668602}
+>>>>>>> JamesBranch
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
+  m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!114 &17
 =======
 --- !u!114 &18
 >>>>>>> Stashed changes
+=======
+--- !u!114 &16
+>>>>>>> JamesBranch
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 1
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
-  m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     x: 507
     y: 94
@@ -1206,6 +1445,12 @@ MonoBehaviour:
     y: 73
     width: 1109
     height: 583
+=======
+    x: 484
+    y: 73
+    width: 1469
+    height: 753
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1216,21 +1461,28 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 1109, y: 562}
+=======
+  m_TargetSize: {x: 1469, y: 732}
+>>>>>>> JamesBranch
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 000000000000000000000000000000000000000000000000000000000000000000000000
-  m_TargetDisplay: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_HBaseRangeMin: -383
     m_HBaseRangeMax: 383
@@ -1244,6 +1496,14 @@ MonoBehaviour:
     m_VBaseRangeMin: -281
     m_VBaseRangeMax: 281
 >>>>>>> Stashed changes
+=======
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -734.5
+    m_HBaseRangeMax: 734.5
+    m_VBaseRangeMin: -366
+    m_VBaseRangeMax: 366
+>>>>>>> JamesBranch
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1252,13 +1512,15 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoom: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
     m_UpDirection: 1
     m_DrawArea:
       serializedVersion: 2
       x: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       y: 17
       width: 1532
@@ -1272,24 +1534,37 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 554.5, y: 281}
 >>>>>>> Stashed changes
+=======
+      y: 21
+      width: 1469
+      height: 732
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 734.5, y: 366}
+>>>>>>> JamesBranch
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       x: -383
       y: -193.25
       width: 766
       height: 386.5
+=======
+      x: -734.5
+      y: -366
+      width: 1469
+      height: 732
+>>>>>>> JamesBranch
     m_MinimalGUI: 1
-  m_defaultScale: 2
-  m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 1
-  m_LastWindowPixelSize: {x: 3064, y: 1580}
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1469, y: 753}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
+<<<<<<< HEAD
 --- !u!114 &18
 =======
       x: -554.5
@@ -1306,28 +1581,38 @@ MonoBehaviour:
   m_RenderTexture: {fileID: 0}
 --- !u!114 &19
 >>>>>>> Stashed changes
+=======
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &17
+>>>>>>> JamesBranch
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
       type: 0}
+=======
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+>>>>>>> JamesBranch
     m_Tooltip: 
-  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 718
     width: 1366
@@ -1341,8 +1626,17 @@ MonoBehaviour:
     y: 677
     width: 1473
     height: 322
+=======
+    x: 0
+    y: 847
+    width: 1954
+    height: 512
+>>>>>>> JamesBranch
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> JamesBranch

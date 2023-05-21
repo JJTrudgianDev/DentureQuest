@@ -8,7 +8,7 @@ public class DialogueManager_02 : MonoBehaviour
     public TextMeshProUGUI textObject;
     private string[] dialogueLines;
     private int currentLineIndex = 0;
-    private bool dialogueActive = false;
+    public bool dialogueActive = false;
 
     public bool isGamePaused;
     public bool isMouseLocked;
@@ -27,7 +27,7 @@ public class DialogueManager_02 : MonoBehaviour
     {
         if (dialogueActive)
         {
-            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 if (currentLineIndex < dialogueLines.Length - 1)
                 {
