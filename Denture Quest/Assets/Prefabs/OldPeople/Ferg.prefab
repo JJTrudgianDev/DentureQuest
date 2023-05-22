@@ -99,8 +99,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.9220324, y: 3.9154453, z: 0.9999999}
-  m_Center: {x: 0.05529862, y: 1.0990478, z: 0}
+  m_Size: {x: 1.9220324, y: 3.701396, z: 0.9999999}
+  m_Center: {x: 0.05529862, y: 1.2060716, z: 8.978842e-15}
 --- !u!135 &3024473254644788970
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -132,9 +132,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  player: {fileID: 0}
+  playerInRange: 0
   activities: 0100000002000000030000000400000005000000
   activityTime: 4
+  hasSight: 0
+  drawDebugInfo: 0
+  headPosition: {x: 0, y: 1.8, z: 0}
+  playerHeadPosition: {x: 0, y: 0.4, z: 0}
+  fieldOfViewAngle: 100
+  playerInRangeDistance: 3
   detectionTime: 3
+  detectionTimer: 0
   detectionBar: {fileID: 3024473255387322746}
   alertnessImage: {fileID: 3024473255387322745}
   movementSpeed: 2
@@ -368,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3024473255670524441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5, y: -18.8, z: 47}
+  m_LocalPosition: {x: 6.5, y: -18.8, z: 2.9}
   m_LocalScale: {x: 57.24485, y: 57.24485, z: 57.24485}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -473,7 +482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3024473255791977174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.7, y: -5.2, z: 41.4}
+  m_LocalPosition: {x: 6.7000003, y: -5.2, z: -2.7000003}
   m_LocalScale: {x: 57.24485, y: 57.24485, z: 57.24485}
   m_ConstrainProportionsScale: 0
   m_Children: []
